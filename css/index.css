@@ -31,19 +31,19 @@
 }
 
 #index-text-holder{
-    width:55%;
+    width:65%;
     padding:15px;
 }
 
 #index-carousel-holder{
-    width:45%;
+    width:35%;
     padding-left:35px;
     padding-right:25px;
 }
 
 .index-holder{
     padding-bottom:15px;
-    font-size:0.8em;
+    font-size:0.9em;
 }
 
 /* ---------------------------------------------------
