@@ -31,12 +31,12 @@
 }
 
 #index-text-holder{
-    width:65%;
+    width:55%;
     padding:15px;
 }
 
 #index-carousel-holder{
-    width:35%;
+    width:45%;
     padding-left:35px;
     padding-right:25px;
 }
@@ -49,6 +49,7 @@
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+/*
 @media (max-width: 812px) {
     #content .carousel{
             display:none
