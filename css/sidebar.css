@@ -83,10 +83,15 @@ a[aria-expanded="true"] {
 }
 
 #sidebar #description{
-    font-size:0.8em;
+    font-size:0.9em;
     padding-bottom:0;
     margin-bottom:0;
     color: #fff;
+}
+
+#sidebar h4{
+    font-size:1.6em;
+    font-size:1.6em;
 }
 
 #sidebar #mobile_buttons{
