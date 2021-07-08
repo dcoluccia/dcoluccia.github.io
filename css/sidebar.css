@@ -3,7 +3,7 @@
 ----------------------------------------------------- */
 
 #sidebar {
-    width: 300px;
+    width: 275px;
     position: fixed;
     top: 0;
     left: 0px;
@@ -162,7 +162,7 @@ a.article:hover {
 }
 
 #fixed_footer{
-    width:300px;
+    width:275px;
     padding-bottom: 10px;
     padding-top:10px;
     padding-left: 10px;
@@ -202,7 +202,7 @@ a.article:hover {
 
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -300px;
+        margin-left: -275px;
     }
     #sidebar.active {
         margin-left: 0;
