@@ -239,7 +239,7 @@ a.article:hover {
 }
 }
 
-@media  (min-height: 710px){
+@media  (min-height: 811px){
         #sidebar #mobile_buttons{
                 display:block;
         }
