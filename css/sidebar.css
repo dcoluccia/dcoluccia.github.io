@@ -1,0 +1,252 @@
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 100vh;
+    z-index: 999;
+    background: #0f66bd;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 0;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    display: none;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #0d549b;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #0f66bd;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #0d549b;
+}
+
+#sidebar h4{
+    padding:0;
+    margin:0;
+}
+
+#sidebar #avatar_picture{
+    padding-top: 15px;
+    padding-bottom:0px;
+    margin-bottom:0;
+}
+
+#sidebar #description{
+    font-size:0.8em;
+    padding-bottom:0;
+    margin-bottom:0;
+    color: #fff;
+}
+
+#sidebar #mobile_buttons{
+    display:none;
+    padding: 15px;
+    padding:0;
+    margin:0;
+    width: 100%;
+}
+
+#sidebar #mobile_buttons h6{
+    padding-bottom:10px;
+}
+
+#sidebar #mobile_buttons .social_icon{
+    margin-bottom:10px;
+}
+
+#sidebar #mobile_buttons h6{
+    padding-left:15px;
+}
+
+.aligned-with-icon{
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 5px;
+    font-size:0.9em;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #0d549b;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+#fixed_footer{
+    width:250px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    padding-left: 10px;
+    font-size: 0.7em;
+    background: #0f66bd !important;
+}
+
+
+.social_icon{
+    padding-top:5px;
+    padding-left:15px;
+}
+
+.social_icon:hover{
+    background: #fff !important;
+    color:#0d549b;
+}
+
+.fa-envelope:hover{
+    color:#0d549b;
+}
+.fa-github:hover{
+    color:#0d549b;
+}
+.fa-telegram:hover{
+    color:#0d549b;
+}
+.fa-skype:hover{
+    color:#0d549b;
+}
+.ai-cv:hover{
+    color:#0d549b;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    #dismiss {
+        display:block;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: #0f66bd;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    #dismiss:hover {
+        background: #fff;
+        color: #0d549b;
+    }
+    #fixed_footer{
+        display:none;
+    }
+}
+
+@media (max-height: 430px) {
+    #sidebar{
+        font-size: 0.9em;
+    }
+    #sidebar #avatar_picture{
+        display:none;
+}
+}
+
+@media  (min-height: 812px){
+        #sidebar #mobile_buttons{
+                display:block;
+        }
+}
+
+@media (min-width: 2000px) {
+    #sidebar {
+        font-size:1.4em;
+    }
+}

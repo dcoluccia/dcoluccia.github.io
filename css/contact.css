@@ -1,0 +1,55 @@
+/* ---------------------------------------------------
+    GENERAL SETTINGS
+----------------------------------------------------- */
+#content .map-holder{
+    width:45%;
+    text-align:right;
+    margin-top:10px;
+}
+
+#content .contact-holder{
+    width:45%;
+    padding-left:15px;
+}
+
+.link-text{
+    vertical-align: middle;
+}
+
+#content .contact-holder p{
+    margin-top:0;
+    margin-bottom:5px;
+}
+
+.contactButton{
+    color:#999;
+}
+
+.aligned-with-icon2{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.contact-icon{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+.contact-entry{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 1200px) {
+    #content .map-holder{
+            width:90%;
+            padding:0;
+    }
+    #content .contact-holder{
+        width:100%;
+    }
+}

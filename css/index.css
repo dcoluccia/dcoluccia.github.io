@@ -1,0 +1,121 @@
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+.carousel-item {
+    height: 420px;
+    padding-top: 20px;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0f66bd;
+    opacity: 0.5;
+}
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators .active{
+    background-color: #0d549b;
+    opacity:1;
+}
+
+.carousel-caption{
+    color:black;
+    position:relative;
+    left: 0;
+    top: 0;
+}
+
+#index-text-holder{
+    width:55%;
+    padding:15px;
+}
+
+#index-carousel-holder{
+    width:45%;
+    padding-left:35px;
+    padding-right:25px;
+}
+
+.index-holder{
+    padding-bottom:15px;
+    font-size:1.1em;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 812px) {
+    #content .carousel{
+            display:none
+    }
+    #content #index-text-holder{
+        width:100%;
+    }
+}
+
+@media  (min-height: 768px) and (min-width: 768px) and (max-height: 1024px) and (max-width: 1024px){
+    #content {
+        font-size: 1.3em;
+    }
+    #content .carousel{
+        text-align: center;
+        display:block;
+        padding-top:0px;
+        width:400px;
+    }
+    #content #index-text-holder{
+        width:100%;
+    }
+    #content .carousel-indicators{
+        bottom:-50px;
+    }
+    #content .carousel-caption{
+        font-size:0.8em;
+    }
+}
+
+@media  (min-height: 1024px) and (min-width: 1024px) and (max-height: 1366px) and (max-width: 1366px){
+    #content {
+        font-size: 1.4em;
+    }
+    #content .carousel{
+        text-align: center;
+        display:block;
+        padding-top:0px;
+        width:400px;
+    }
+    #content #index-text-holder{
+        width:100%;
+    }
+    #content .carousel-indicators{
+        bottom:-80px;
+    }
+    #content .carousel-caption{
+        bottom:0px;
+        width:100%;
+        font-size:0.8em;
+    }
+}
+
+@media (min-width: 1300px) {
+    #content {
+        font-size:1.2em;
+    }
+    #content #index-text-holder{
+        width:80%;
+    }
+    .btn{
+        font-size:1em;
+    }
+    #content .carousel{
+        width:400px;
+    }
+    #content .carousel-indicators{
+        bottom:-70px;
+    }
+}

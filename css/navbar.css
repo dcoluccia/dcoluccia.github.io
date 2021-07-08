@@ -1,0 +1,47 @@
+/* ---------------------------------------------------
+    NAVBAR STYLE:
+    navbar pops up only on mobile devices
+----------------------------------------------------- */
+
+.navbar {
+    display:none;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        background: #fff;
+        border: none;
+        z-index: 2;
+        with: 100%;
+        border-radius: 0;
+        padding-left:20px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-btn {
+        box-shadow: none;
+        outline: none !important;
+        border: none;
+    }
+    #navbar_header{
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-right:5px;
+        margin:0;
+    }
+}
+
+@media (max-width: 330px){
+    #navbar_header{
+        font-size:20px;
+    }
+}
+
+@media (max-width: 280px){
+    #navbar_header{
+        font-size:15px;
+    }
+}

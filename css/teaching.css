@@ -1,0 +1,96 @@
+/* ---------------------------------------------------
+    GENERAL SETTINGS
+----------------------------------------------------- */
+
+.teaching-item{
+    padding-top:0px;
+    padding-bottom:16px;
+    width:60%;
+}
+
+.teaching-item h5{
+    padding-top:0;
+    margin-top:0;
+}
+
+.teaching-item-buttons{
+    margin-bottom:10px;
+    margin-top:0;
+    padding-top:0;
+}
+
+.buttonAbstract {
+  background-color: #E2E2E3;
+  color: #555;
+  border:none;
+  outline:none;
+  margin-right:10px;
+  margin-top:10px;
+   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.buttonAbstract:hover {
+  background-color: #0d539b;
+  color: white;
+  border:none;
+}
+
+.buttonAbstract,
+.buttonAbstract:active,
+.buttonAbstract:focus {
+  outline: none;
+}
+
+.card{
+    margin-top:15px;
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-color:black;
+    font-size:0.9em;
+    outline:none;
+    border:none;
+    background-color:#E2E2E3;
+}
+
+.teaching-title{
+    font-weight: 600;
+    color: #000000;
+    margin-top:0;
+    margin-bottom:0;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.teaching-coauthor{
+    margin-top:0px;
+    margin-bottom:0;
+    padding-top:0;
+    padding-bottom:0;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    .card{
+        width:100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .teaching-item{
+        width:100%;
+    }
+    .teaching-title{
+        font-weight: 400;
+        font-size: 1em;
+    }
+    .teaching-coauthor{
+        font-size: 0.9em;
+    }
+}
