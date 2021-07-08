@@ -49,6 +49,7 @@
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+/*
 @media (max-width: 812px) {
     #content .carousel{
             display:none
@@ -78,7 +79,7 @@
         font-size:0.8em;
     }
 }
-/*
+
 @media  (min-height: 1091px) and (min-width: 1024px) and (max-height: 1366px) and (max-width: 1366px){
     #content {
         font-size: 1.4em;
@@ -101,7 +102,7 @@
         font-size:0.8em;
     }
 }
-/*
+
 @media (min-width: 1300px) {
     #content {
         font-size:1.2em;
