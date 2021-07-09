@@ -151,13 +151,13 @@
         font-size:1em;
     }
     #content .carousel-caption{
-        font-size:1em;
+        font-size:0.9em;
     }
     .carousel-caption h6{
-        font-size:1.1em;
+        font-size:1.2em;
     }
     .carousel-item {
-        height: 600px;
+        height: 700px;
     }
     #content .carousel{
         width: 600px;
