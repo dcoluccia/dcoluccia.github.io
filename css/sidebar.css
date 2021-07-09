@@ -74,6 +74,7 @@ a[aria-expanded="true"] {
 #sidebar h4{
     padding:0;
     margin:0;
+    font-size:1.6em;
 }
 
 #sidebar #avatar_picture{
@@ -87,10 +88,6 @@ a[aria-expanded="true"] {
     padding-bottom:0;
     margin-bottom:0;
     color: #fff;
-}
-
-#sidebar h4{
-    font-size:1.6em;
 }
 
 #sidebar #mobile_buttons{
@@ -133,7 +130,7 @@ a[data-toggle="collapse"] {
 }
 
 ul ul a {
-    font-size: 0.9em !important;
+    font-size: 1.1em !important;
     padding-left: 30px !important;
     background: #0d549b;
 }
@@ -144,7 +141,7 @@ ul.CTAs {
 
 ul.CTAs a {
     text-align: center;
-    font-size: 0.9em !important;
+    font-size: 1.1em !important;
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
