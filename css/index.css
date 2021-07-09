@@ -109,18 +109,18 @@
 
 @media (min-width: 1700px) {
     #content {
-        font-size:1.2em;
+        font-size:1.4em;
     }
     /*
     #content #index-text-holder{
         width:80%;
     }
-    .btn{
-        font-size:1em;
-    }
     */
+    .btn{
+        font-size:1.2em;
+    }
     .carousel-item {
-        height: 800px;
+        height: 600px;
     }
     #content .carousel{
         width:600px;
