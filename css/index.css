@@ -117,10 +117,13 @@
     .btn{
         font-size:1em;
     }
+    .carousel-item {
+        height: 600px;
+    }
     #content .carousel{
         width:400px;
     }
     #content .carousel-indicators{
-        bottom:-70px;
+        bottom:-10px;
     }
 }
