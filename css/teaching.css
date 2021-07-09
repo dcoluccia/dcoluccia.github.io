@@ -93,18 +93,9 @@
     .teaching-coauthor{
         font-size: 0.9em;
     }
-}
-
-/* horizontal tablet */
-@media (min-width: 768px) and (max-height: 1024px) and (orientation: landscape){
-    .teaching-item{
+    .card{
         width:100%;
-    }
-    .teaching-title{
-        font-weight: 400;
-        font-size: 1em;
-    }
-    .teaching-coauthor{
-        font-size: 0.9em;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
