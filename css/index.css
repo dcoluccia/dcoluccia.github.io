@@ -153,6 +153,9 @@
     #content .carousel-caption{
         font-size:1em;
     }
+    .carousel-caption h6{
+        font-size:1.1em;
+    }
     .carousel-item {
         height: 600px;
     }
@@ -160,7 +163,7 @@
         width: 600px;
     }
     #content .carousel-indicators{
-        bottom:-20px;
+        bottom:-35px;
     }
     #content #index-text-holder{
         width:55%;
