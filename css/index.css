@@ -3,7 +3,7 @@
 ----------------------------------------------------- */
 
 .carousel-item {
-    height: 420px;
+    height: 520px;
     padding-top: 20px;
 }
 
@@ -25,7 +25,6 @@
 
 .carousel-caption{
     color:black;
-    background-color:black;
     position:relative;
     font-size:0.8em;
     left: 0;
