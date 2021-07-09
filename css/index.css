@@ -109,7 +109,7 @@
 
 @media (min-width: 1700px) {
     #content {
-        font-size:1.4em;
+        font-size:1.6em;
     }
     /*
     #content #index-text-holder{
@@ -117,7 +117,7 @@
     }
     */
     .btn{
-        font-size:1.2em;
+        font-size:1em;
     }
     .carousel-item {
         height: 600px;
