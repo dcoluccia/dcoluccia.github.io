@@ -58,8 +58,10 @@
     #content .map-holder{
             width:90%;
             padding:0;
+            margin-left:0;
     }
     #content .contact-holder{
         width:100%;
     }
 }
+
