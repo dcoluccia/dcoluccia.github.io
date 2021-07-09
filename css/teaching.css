@@ -5,7 +5,7 @@
 .teaching-item{
     padding-top:0px;
     padding-bottom:16px;
-    width:60%;
+    width:70%;
 }
 
 .teaching-item h5{
@@ -82,7 +82,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .teaching-item{
         width:100%;
     }
