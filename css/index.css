@@ -159,11 +159,11 @@
     #content .carousel-indicators{
         bottom:-20px;
     }
-    #index-text-holder{
-    width:55%;
-    padding:15px;
+    #content #index-text-holder{
+        width:55%;
+        padding:15px;
     }
-    #index-carousel-holder{
+    #content #index-carousel-holder{
         width:45%;
         padding-left:35px;
         padding-right:25px;
