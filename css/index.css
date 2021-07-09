@@ -124,6 +124,6 @@
         width:400px;
     }
     #content .carousel-indicators{
-        bottom:-10px;
+        bottom:20px;
     }
 }
