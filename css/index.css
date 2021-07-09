@@ -15,7 +15,7 @@
     opacity: 0.5;
 }
 .carousel-indicators {
-    bottom: -100px;
+    bottom: -80px;
 }
 
 .carousel-indicators .active{
@@ -25,6 +25,7 @@
 
 .carousel-caption{
     color:black;
+    background-color:black;
     position:relative;
     font-size:0.8em;
     left: 0;
