@@ -5,6 +5,7 @@
     width:45%;
     text-align:right;
     margin-top:10px;
+    margin-left:20px;
 }
 
 #content .contact-holder{
@@ -38,7 +39,7 @@
 }
 
 .contact-entry{
-    padding-top:10px;
+    padding-top:0px;
     padding-bottom:10px;
 }
 
