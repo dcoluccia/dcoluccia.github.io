@@ -163,7 +163,7 @@
         width: 600px;
     }
     #content .carousel-indicators{
-        bottom:-10px;
+        bottom:5px;
     }
     #content #index-text-holder{
         width:55%;
