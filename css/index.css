@@ -15,7 +15,7 @@
     opacity: 0.5;
 }
 .carousel-indicators {
-    bottom: 5px;
+    bottom: -5px;
 }
 
 .carousel-indicators .active{
