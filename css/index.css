@@ -151,10 +151,10 @@
         font-size:1em;
     }
     .carousel-item {
-        height: 550px;
+        height: 600px;
     }
     #content .carousel{
-        width:600px;
+        width:500px;
     }
     #content .carousel-indicators{
         bottom:-20px;
