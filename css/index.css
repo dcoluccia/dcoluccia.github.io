@@ -118,14 +118,15 @@
     .btn{
         font-size:1em;
     }
+    */
     .carousel-item {
-        height: 600px;
+        height: 800px;
     }
     #content .carousel{
-        width:400px;
+        width:600px;
     }
     #content .carousel-indicators{
-        bottom:20px;
+        bottom:-20px;
     }
     */
 }
