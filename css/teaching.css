@@ -57,12 +57,13 @@
 }
 
 .teaching-title{
-    font-weight: 600;
+    font-weight: 500;
     color: #000000;
     margin-top:0;
     margin-bottom:0;
     padding-top:0;
     padding-bottom:0;
+    font-size:.95em;
 }
 
 .teaching-coauthor{
@@ -70,6 +71,11 @@
     margin-bottom:0;
     padding-top:0;
     padding-bottom:0;
+    font-size:.9em;
+}
+
+.buttonAbstract{
+        font-size:0.9em;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -97,5 +103,21 @@
         width:100%;
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .teaching-title{
+        font-weight: 450;
+        font-size: 0.8em;
+    }
+    .teaching-coauthor{
+        font-size: 0.75em;
+    }
+    .card{
+        font-size:0.75em;
+    }
+    .buttonAbstract{
+        font-size:0.75em;
     }
 }

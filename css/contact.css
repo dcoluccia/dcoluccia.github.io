@@ -41,15 +41,17 @@
 .contact-entry{
     padding-top:0px;
     padding-bottom:10px;
+    font-size:.9em;
 }
 
 .contact-title{
-    font-weight: 600;
+    font-weight: 500;
     color: #000000;
     margin-top:0;
     margin-bottom:0;
     padding-top:0;
     padding-bottom:0;
+    font-size:.95em;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -69,5 +71,15 @@
     .contact-title{
         font-weight: 400;
         font-size: 1em;
+    }
+}
+
+@media (min-width: 1700px) {
+    .contact-title{
+        font-weight: 450;
+        font-size: 0.8em;
+    }
+    .contact-entry{
+        font-size: 0.75em;
     }
 }

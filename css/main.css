@@ -63,3 +63,8 @@ a.link_text:hover{
     background-color:#0d549b;
 }
 
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
