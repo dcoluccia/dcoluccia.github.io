@@ -40,3 +40,14 @@ tr.CV-subfield td ul{
         font-size:0.9em;
     }
 }
+
+@media  (min-height: 500px)  and (max-height: 600px) {
+    .table{
+        font-size:0.85em;
+    }
+    #cv-button{
+        margin-bottom:20px;
+        margin-top:5px;
+        font-size:1em;
+    }
+}

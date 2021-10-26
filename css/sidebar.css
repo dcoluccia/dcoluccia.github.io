@@ -246,6 +246,18 @@ a.article:hover {
         }
 }
 
+@media  (min-height: 500px) and (max-height: 600px){
+        #sidebar h4{
+            font-size:1.50em;
+        }
+        #sidebar #description{
+            font-size: 0.85em;
+        }
+        #sidebar ul li a {
+            font-size:1.1em;
+        }
+}
+
 @media (min-width: 2000px) {
     #sidebar {
         font-size:1.2em;

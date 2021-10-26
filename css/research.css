@@ -119,3 +119,23 @@
         font-size:0.75em;
     }
 }
+
+@media  (min-height: 500px)  and (max-height: 600px) {
+    .research-title{
+        font-weight: 450;
+        font-size: 0.9em;
+    }
+    .research-coauthor{
+        font-size: 0.85em;
+    }
+    .buttonAbstract{
+        font-size:0.85em;
+    }
+    .card{
+        font-size:0.85em;
+    }
+
+    h4{
+        font-size:1.1em;
+    }
+}
