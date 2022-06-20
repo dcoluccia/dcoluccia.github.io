@@ -1,0 +1,80 @@
+.data-item{
+    margin-top:0px;
+    margin-bottom:10px;
+}
+
+.display-5{
+    font-size: 1.3em;
+}
+
+#main-text{
+    margin-top:5px;
+    padding-top: 85px;
+}
+
+.link-button{
+    margin-top:10px;
+}
+
+.map-holder{
+    width:100%;
+    height:400px;
+    margin-top:20px;
+}
+
+
+@media (min-width: 360px){
+    .map-holder{
+        width:100%;
+        margin-top:20px;
+    }
+}
+
+@media (min-width: 450px){
+    .map-holder{
+        width:360px;
+        margin-top:20px;
+    }
+}
+
+@media (min-width: 700px){
+    .map-holder{
+        width:340px;
+        margin-top:-30px;
+    }
+}
+
+@media (min-width: 768px){
+    #main-text{
+        margin-top:-15px;
+        padding-top: 40px;
+    }
+}
+
+.separator{
+    margin-top:30px;
+}
+
+.button-holder{
+    margin-top:5px;
+    padding-top: 5px;
+}
+
+.tooltip-inner {
+  max-width: 150px !important;
+  padding: 5px 2px 5px 2px;
+  background: #F8F9FA;
+  color: black;
+  border: 1.5px solid black;
+  text-align: center;
+}
+.tooltip.show {
+  opacity: 1;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: black;
+  /* Red */
+}
+

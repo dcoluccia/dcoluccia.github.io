@@ -1,0 +1,47 @@
+.gmap_canvas{
+    display:none;
+}
+.separator{
+    margin-top:20px;
+}
+
+#main-text{
+    padding-top:20px;
+}
+
+.h6{
+    margin-top:15px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 360px){
+    #contacts-container{
+        margin-top: 10px;
+    }
+    .gmap_canvas{
+        width: 100%;
+        display:block;
+    }
+}
+
+@media (min-width: 560px){
+    .gmap_canvas{
+        width: 130%;
+        display:block;
+    }
+}
+
+@media (max-width: 767px){
+    .gmap_canvas{
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 768px){
+    #contacts-container{
+        margin-top:-5px;
+    }
+    #main-text{
+        padding-top:35px;
+    }
+}
