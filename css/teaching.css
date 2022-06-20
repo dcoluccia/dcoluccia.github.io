@@ -1,143 +1,40 @@
-/* ---------------------------------------------------
-    GENERAL SETTINGS
------------------------------------------------------ */
+#Current_Courses{
+    padding:10px;
+    padding-top:0;
+}
+
+#Past_Courses{
+    margin-top:20px;
+    padding:10px;
+    padding-bottom:0;
+}
 
 .teaching-item{
-    padding-top:0px;
-    padding-bottom:16px;
-    width:70%;
+    padding-top:10px;
 }
 
-.teaching-item h5{
-    padding-top:0;
-    margin-top:0;
-}
-
-.teaching-item-buttons{
-    margin-bottom:10px;
-    margin-top:0;
-    padding-top:0;
-}
-
-.buttonAbstract {
-  background-color: #E2E2E3;
-  color: #555;
-  border:none;
-  outline:none;
-  margin-right:10px;
-  margin-top:10px;
-   cursor: pointer;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.buttonAbstract:hover {
-  background-color: #0d539b;
-  color: white;
-  border:none;
-}
-
-.buttonAbstract,
-.buttonAbstract:active,
-.buttonAbstract:focus {
-  outline: none;
+.h6{
+    font-size:1.1em;
 }
 
 .card{
-    margin-top:15px;
-    width:100%;
-    padding-top:10px;
-    padding-bottom:10px;
-    border-color:black;
-    font-size:0.9em;
-    outline:none;
-    border:none;
-    background-color:#E2E2E3;
+    margin:0;
+    margin-top:20px;
 }
 
-.teaching-title{
-    font-weight: 500;
-    color: #000000;
-    margin-top:0;
-    margin-bottom:0;
+.teaching-par{
+    margin-top:-10px;
     padding-top:0;
-    padding-bottom:0;
-    font-size:.95em;
 }
 
-.teaching-coauthor{
-    margin-top:0px;
-    margin-bottom:0;
-    padding-top:0;
-    padding-bottom:0;
-    font-size:.9em;
-}
-
-.buttonAbstract{
-        font-size:0.9em;
-}
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-@media (max-width: 768px) {
-    .card{
-        width:100%;
-        padding-left: 10px;
-        padding-right: 10px;
+@media (min-width: 320px){
+    #Current_Courses{
+        padding-top: 10px;
     }
 }
 
-@media (max-width: 1200px) {
-    .teaching-item{
-        width:100%;
-    }
-    .teaching-title{
-        font-weight: 400;
-        font-size: 1em;
-    }
-    .teaching-coauthor{
-        font-size: 0.9em;
-    }
-    .card{
-        width:100%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-@media (min-width: 1700px) {
-    .teaching-title{
-        font-weight: 450;
-        font-size: 0.8em;
-    }
-    .teaching-coauthor{
-        font-size: 0.75em;
-    }
-    .card{
-        font-size:0.75em;
-    }
-    .buttonAbstract{
-        font-size:0.75em;
-    }
-}
-
-@media  (min-height: 500px)  and (max-height: 600px) {
-    .teaching-title{
-        font-weight: 450;
-        font-size: 0.9em;
-    }
-    .teaching-coauthor{
-        font-size: 0.85em;
-    }
-    .buttonAbstract{
-        font-size:0.85em;
-    }
-    .card{
-        font-size:0.85em;
-    }
-
-    h4{
-        font-size:1.1em;
+@media (min-width: 768px){
+    #Current_Courses{
+        margin-top: -30px;
     }
 }

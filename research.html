@@ -1,341 +1,363 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta charset="UTF-8">
     <title>Davide M. Coluccia / Research</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-    <!-- General Settings CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- Body text Settings CSS -->
-    <link rel="stylesheet" href="css/content.css">
-    <!-- Sidebar CSS -->
-    <link rel="stylesheet" href="css/sidebar.css">
-    <!-- Scrollbar CSS -->
-    <link rel="stylesheet" href="css/scrollbar.css">
-    <!-- Navbar CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/baseline.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <!-- Index CSS -->
-    <link rel="stylesheet" href="css/index.css">
-    <!-- Research CSS -->
     <link rel="stylesheet" href="css/research.css">
-
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
-    <script src="https://kit.fontawesome.com/178860a8b1.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/bocconi_fav.ico">
-
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-
-            <div class="sidebar-header">
-                <h4>Davide M. <b>Coluccia</b></h4>
-
-                <p id="description">
-                    Ph.D. Student in Economics, Bocconi University
-                </p>
-
-                <p class="text-left" id="avatar_picture">
-                        <img src="images/avatar.png" alt="" width = 60%>
-                </p>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li>
-                    <a href="https://dcoluccia.github.io">Home</a>
-                </li>
-
-                <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Bio & CV</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="https://dcoluccia.github.io/cv_bio">Bio</a>
-                        </li>
-                        <li>
-                            <a href="https://www.dropbox.com/s/yrkwgruxy09gr8e/cv.pdf?dl=0">Download CV</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="active">
-                    <a href="https://dcoluccia.github.io/research">Research</a>
-                </li>
-
-                <li>
-                    <a href="https://dcoluccia.github.io/teaching">Teaching</a>
-                </li>
-
-                <li>
-                    <a href="https://dcoluccia.github.io/contact">Contact</a>
-                </li>
-            </ul>
-
-            <div id="mobile_buttons">
-                <h6>
-                    Quick Links
-                </h6>
-
-                <div class="social_icon">
-                    <a href = "mailto: davide.coluccia@unibocconi.it">
-                        <i class="fas fa-envelope fa-2x"></i>
-                    </a>
-                    &nbsp;&nbsp;
-                    <span class="aligned-with-icon">
-                        <a href = "mailto: davide.coluccia@unibocconi.it">
-                            Contact Me
-                    </a>
-                    </span>
-                </div>
-
-                <div class="social_icon">
-                    <a href = "https://www.dropbox.com/s/yrkwgruxy09gr8e/cv.pdf?dl=0" target="_blank">
-                        <i class="ai ai-cv ai-2x"></i>
-                    </a>
-                    &nbsp;&nbsp;
-                    <span class="aligned-with-icon">
-                        <a href = "https://www.dropbox.com/s/yrkwgruxy09gr8e/cv.pdf?dl=0" target="_blank">
-                            Download CV
-                    </a>
-                    </span>
-                </div>
-
-                <div class="social_icon">
-                    <a href = "https://github.com/dcoluccia" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>
-                    </a>
-                    &nbsp;&nbsp;
-                    <span class="aligned-with-icon">
-                        <a href = "https://github.com/dcoluccia" target="_blank">
-                                My Github page
-                        </a>
-                    </span>
-                </div>
-            </div>
-
-            <footer class="fixed-bottom" id="fixed_footer">
-                    <span>&#169;</span> 2021 Davide M. Coluccia
-            </footer>
-
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-secondary">
-                        <i class="fas fa-align-justify fa-2x"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-                    <h4 id="navbar_header">
-                        Davide M. Coluccia
-                    </h4>
-                </div>
-            </nav>
-
-
-            <h2>Research</h2>
-
-            <div class="line"></div>
-
-            <h4>Working Papers</h4>
-
-            <div class="research-item">
-                <p class="research-title">The Economic Effects of Immigration Restriction Policies: Evidence from the Italian Emigration to the US, 1890-1930<p>
-                <p class="research-coauthor">joint with <a class="link_text" href="https://sites.google.com/site/lorenzospadavecchiaeconomics/home" target="_blank">Lorenzo Spadavecchia</a> (2022) - <i>Submitted</i></p>
-
-                <div class="research-item-buttons">
-                    <button onclick="update_abstract_button('Abstract_CS2021')" class="buttonAbstract" data-toggle="collapse" href="#CS2021" role="button" aria-expanded="false" aria-controls="CS2021" value="Show Abstract" id="Abstract_CS2021">
-                        Abstract &#9660;
-                    </button>
-                    <button class="buttonAbstract"><a href="https://www.dropbox.com/s/y4oxu7qrq3ub5je/main.pdf?dl=0" target="_blank">PDF <i class="fas fa-file-pdf"></i></a></button>
-                    <button class="buttonAbstract"><a href="https://www.cesifo.org/en/publikationen/2021/working-paper/economic-effects-immigration-restriction-policies-evidence-italian" target="_blank">CESifo Working Paper <i class="fas fa-file-pdf"></i></a></button>
-                    <button class="buttonAbstract"><a href="https://www.dropbox.com/s/la3t98xiywlnpvz/main.pdf?dl=0" target="_blank">Slides  <i class="fas fa-images"></i></a></button>
-                    <!--<button class="buttonAbstract">Code <i class="fas fa-code"></i></button>
-                    <button class="buttonAbstract">Data <i class="far fa-chart-bar"></i></button>-->
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="CS2021">
-                                <div class="card card-body">
-                                    <p>
-                                        This article studies the impact of immigration restriction policies on technology adoption in sending countries. From 1920 to 1921, the number of Italian immigrants to the United States dropped by 85% after Congress passed the Emergency Quota Act, a severely restrictive immigration law. In a difference-in-differences setting, we exploit variation in exposure across Italian districts to this massive restriction against human mobility. Using novel individual-level data on Italian immigrants to the US and newly digitized historical censuses, we show that this policy substantially hampered technology adoption and capital investment. We interpret this as evidence of directed technical adoption: an increase in the labor supply dampens the incentive for firms to adopt labor-saving technologies. To validate this mechanism, we show that more exposed districts display a sizable increase in overall population and employment in manufacturing. We provide evidence that "missing migrants," whose migration was inhibited by the Act, drive this result.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="research-item">
-                <p class="research-title">Durable Goods and Monetary Policy in a Menu-Cost Economy<p>
-                <p class="research-coauthor">(2020)</p>
-
-                <div class="research-item-buttons">
-                    <button onclick="update_abstract_button('Abstract_C2020')" class="buttonAbstract" data-toggle="collapse" href="#C2020" role="button" aria-expanded="false" aria-controls="C2020" value="Show Abstract" id="Abstract_C2020">
-                        Abstract &#9660;
-                    </button>
-                    <button class="buttonAbstract"><a href="https://www.dropbox.com/s/cq6mw4kfwq7jzs7/main.pdf?dl=0" target="_blank">PDF <i class="fas fa-file-pdf"></i></a></button>
-                    <button class="buttonAbstract"><a href="https://www.dropbox.com/s/as7ixn43000nyr9/DGMP_DMC2020.pdf?dl=0" target="_blank">Slides  <i class="fas fa-images"></i></a></button>
-                    <!--<button class="buttonAbstract">Code <i class="fas fa-code"></i></button>
-                    <button class="buttonAbstract">Data <i class="far fa-chart-bar"></i></button>-->
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="C2020">
-                                <div class="card card-body">
-                                    <p>
-                                        This paper studies the distinctive pricing dynamics of durable goods and analyzes their implications for the conduct of monetary policy in a menu-cost economy. Using price microdata, I document the following new facts: (i) the dispersion of price changes in durables is higher than in nondurables; (ii) the frequency of price adjustment is countercyclical, however durable prices get relatively rigid in recessions; (iii) the dispersion of price changes is countercyclical for durables, and procyclical for nondurables. I develop a menu-cost model embedding durable consumption and calibrate it to match new and consolidated empirical evidence. I use the model to challenge the prevailing view holding that durable goods dampen the real effectiveness of monetary policy. I find that even though durable goods prices are relatively flexible, the model generates substantial monetary non-neutrality. Moreover, this paper puts forward a new channel whereby durable consumption can amplify the real effects of monetary policy. This result is driven by heterogeneous demand pass-through of aggregate shocks across sectors. Higher durable consumption enhances the sensitivity of nondurable output to interest rate shocks thus amplifying monetary non-neutrality.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="dashed-line"></div>
-
-            <h4>Selected Work in Progress</h4>
-
-            <div class="research-item">
-                <p class="research-title">Religiosity and Science: An Oxymoron? Evidence from the Great Influenza Pandemic<p>
-                <p class="research-coauthor">joint with <a class="link_text" href="https://sites.google.com/view/enricoberkes/home" target="_blank">Enrico Berkes</a>, <a class="link_text" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia G. Dossi</a>, and <a class="link_text" href="https://marasquicciarini.wixsite.com/home" target="_blank">Mara P. Squicciarini</a> (2022)</p>
-
-                <div class="research-item-buttons">
-                    <button onclick="update_abstract_button('Abstract_BCDS2021')" class="buttonAbstract" data-toggle="collapse" href="#BCDS2021" role="button" aria-expanded="false" aria-controls="BCDS2021" value="Show Abstract" id="Abstract_BCDS2021">
-                        Abstract &#9660;
-                    </button>
-                    <!--<button class="buttonAbstract"><a href="https://www.dropbox.com/s/cq6mw4kfwq7jzs7/main.pdf?dl=0" target="_blank">PDF <i class="fas fa-file-pdf"></i></a></button>
-                    <button class="buttonAbstract"><a href="https://www.dropbox.com/s/as7ixn43000nyr9/DGMP_DMC2020.pdf?dl=0" target="_blank">Slides  <i class="fas fa-images"></i></a></button>
-                    <button class="buttonAbstract">Code <i class="fas fa-code"></i></button>
-                    <button class="buttonAbstract">Data <i class="far fa-chart-bar"></i></button>-->
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="BCDS2021">
-                                <div class="card card-body">
-                                    <p>
-                                        This paper studies the relationship between religiosity and science over time. Focusing on the United States over the 1900-1930 period, we define a novel indicator of revealed religiosity that leverages naming patterns of newborn babies, and measure scientific progress through the universe of patents granted in the US over this period. We document that the relationship between religiosity and science is negative before 1918, and positive thereafter. Exploiting plausibly exogenous variation in exposure to the Spanish Influenza pandemic (1918-1920), we find that relatively more affected counties become both more religious and more innovative. We use individual-level data to shed light on the potential mechanisms. We show that in counties affected by the pandemic: i) pre-existing differences in religiosity increased, leading to a polarization of religious beliefs; ii) individuals in science-related fields, who were less religious before the shock, became even less religious than the rest of the population.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="research-item">
-                <p class="research-title">Return Innovation: Evidence from the English Migration to the United States, 1850-1940<p>
-                <p class="research-coauthor">joint with <a class="link_text" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia G. Dossi</a> (2022)</p>
-            </div>
-
-            <div class="research-item">
-                <p class="research-title">Uniting the Kingdom with the States: The UK-US Census Linking Project, 1850-1920.<p>
-                <p class="research-coauthor">joint with <a class="link_text" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia G. Dossi</a> (2022)</p>
-            </div>
-
-            <div class="dashed-line"></div>
-
-            <h4>Pre-doctoral Works</h4>
-            <div class="research-item">
-                <p class="research-title">Back to Basics: analyzing the determinants of feedback and amplification in an Agent-Based financial market<p>
-                <p class="research-coauthor">joint with John Hill and <a class="link_text" href="https://ideas.repec.org/f/pna598.html" target="_blank">Paul Nahai-Williamson</a> (2018). </p>
-
-                <div class="research-item-buttons">
-                    <button onclick="update_abstract_button('Abstract_CNH2018')" class="buttonAbstract" data-toggle="collapse" href="#CNH2018" role="button" aria-expanded="false" aria-controls="CNH2018" value="Show Abstract" id="Abstract_CNH2018">
-                        Abstract &#9660;
-                    </button>
-                    <button class="buttonAbstract"><a href="https://github.com/dcoluccia/ABM_Leverage_Information/blob/master/BoE_Model.pdf" target="_blank">PDF <i class="fas fa-file-pdf"></i></a></button>
-                    <button class="buttonAbstract"><a href="https://github.com/dcoluccia/ABM_Leverage_Information" target="_blank">Code <i class="fas fa-code"></i></a></button>
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="CNH2018">
-                                <div class="card card-body">
-                                    <p>
-                                        We develop a financial market in which investors trade in corporate equity, whose issuers' balance sheets are governed by exogenous processes. Upon modeling the pricing mechanism of equity stemming from the expectations formation rules and the market design in such a simple endowment economy, we consider the impact on the pricing dynamics and aggregate welfare of imperfect information, heterogeneity across investors and corporate leverage. In order to disentangle the direct consequences that are entailed by these factors we include them in the environment incrementally. We are thus able to show that equity is traded if and only if information is imperfect and investors are heterogeneous. Furthermore, the pricing mechanism is shown to be coherent with standard non-arbitrage arguments despite lack of perfect rationality. Amplification dynamics emerge once corporate leverage is introduced, resulting in both welfare losses and pricing overshooting. Although no liability cross-holding is allowed, contagion dynamics stem from the common equity-pricing market, their criticality being amplified in the presence of corporate debt.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="research-item">
-                <p class="research-title">On the effects of firing costs on employment and welfare in a duopoly market with entry<p>
-                <p class="research-coauthor">joint with <a class="link_text" href="https://people.unipi.it/simone_dalessandro/" target="_blank">Simone D'Alessandro</a> and <a class="link_text" href="https://people.unipi.it/nicola_meccheri/" target="_blank">Nicola Meccheri</a> (2017). In Fanti, L. (ed.), <i> Oligopoly: theories and institutions</i>, Pisa (IT): Pisa University Press.</p>
-
-
-                <div class="research-item-buttons">
-                    <button class="buttonAbstract"><a href="https://www.aiel.it/cms/cms-files/submission/all20170626201618.pdf" target="_blank">PDF <i class="fas fa-file-pdf"></i></a></button>
-                </div>
-            </div>
-        </div>
+<div class="container">
+    <div class="row">
+    <div class="col-sm-0 col-lg-2" id="border-left">
     </div>
 
-    <div class="overlay"></div>
+    <div class="col-sm-12 col-lg-8">
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+       <div class="header bg-light py-1" id="header-top">
+            <div class="container">
+                    <h1 class="display-4"><a class="no_highlight_link" href="https://dcoluccia.github.io">Davide M. <font color="#B21311">Coluccia</font></a></h1>
+                    <h1 class="display-4" id="title-affiliation">
+                        Ph.D. Candidate in Economics, Bocconi University
+                    </h1>
+            </div>
+        </div>
 
-    <script>
-        function update_abstract_button(x)
-            {
-                var elem = document.getElementById(x);
-                if (elem.value =="Show Abstract") {
-                    elem.value  = "Hide Abstract";
-                    elem.innerHTML  = "Abstract &#9650;";
-                } else{
-                elem.value  = "Show Abstract";
-                elem.innerHTML  = "Abstract &#9660;";
-                }
+       <div class="title-separator"></div>
+
+        <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+            <h1 class="display-4" id="Mobile-header"><a class="no_highlight_link" href="https://dcoluccia.github.io">Davide M. <font color="#B21311">Coluccia</font></a></h1>
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link" title="Home" href="https://dcoluccia.github.io">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="CV" href="dcoluccia.github.io/docs/Coluccia_CV.pdf">CV</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" title="Research" href="https://dcoluccia.github.io/research">Research</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" title="Data" href="https://dcoluccia.github.io/data">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="Teaching" href="https://dcoluccia.github.io/teaching">Teaching</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" title="Contacts" href="https://dcoluccia.github.io/contacts">Contacts</a>
+              </li>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="container" id="main-text">
+
+            <div class="container" id="WorkingPapers">
+                <h1 class="display-5">Working Papers</h1>
+                <div class="research-item">
+                    <p class="h6"><u class="item-research-teaching"><a class="link_paper" href="dcoluccia.github.io/docs/CS_2021.pdf">The Economic Effects of Immigration Restriction Policies: Evidence from the Italian Migration to the United States</a></u></p>
+                    <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/site/lorenzospadavecchiaeconomics/home?authuser=0" target="_blank">Lorenzo Spadavecchia</a>, 2022 - <em>Submitted</em></p>
+                    <p class="research-par">
+                        <b>Idea.</b> A restrictive immigration policy increases labor supply in the country sending migrants.
+                        This triggers incentive to decrease capital investment and switch to labor.
+                    </p>
+                    <div class="research-buttons">
+                        <button onclick="update_abstract_button('Abstract_BCDS2021')" class="buttonAbstract" data-toggle="collapse" href="#BCDS2021" role="button" aria-expanded="false" aria-controls="BCDS2021" value="Show Abstract" id="Abstract_BCDS2021">
+                            Abstract &#x25BC;
+                        </button>
+                        &nbsp
+                        <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="<code>@article{Coluccia_Spadavecchia_2022,<br/>&nbsp&nbsp&nbsp&nbsp title&nbsp&nbsp&nbsp=&nbsp{{The Economic Effects of Immigration Restriction Policies: Evidence from the Italian Migration to the United States}},<br/>&nbsp&nbsp&nbsp&nbsp author&nbsp&nbsp=&nbsp{Davide M. Coluccia and Lorenzo Spadavecchia},<br/>&nbsp&nbsp&nbsp&nbsp journal&nbsp=&nbsp{Working Paper},<br/>&nbsp&nbsp&nbsp&nbsp year&nbsp&nbsp&nbsp&nbsp=&nbsp{2022},<br/>}</code>" data-html="true" data-placement="bottom">
+                            BibTeX
+                        </button>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="collapse multi-collapse" id="BCDS2021">
+                                    <div class="card card-body">
+                                        <p class="text-justify">
+                                            This article studies the impact of immigration restriction policies on technology
+                                            adoption in countries sending migrants. From 1920 to 1921, the number of Italian
+                                            immigrants to the United States dropped by 85% after Congress passed the Emergency
+                                            Quota Act, a severely restrictive immigration law. In a difference-in-differences
+                                            setting, we exploit variation in exposure across Italian districts to this massive
+                                            restriction against human mobility. Using novel individual-level data on Italian
+                                            immigrants to the US and newly digitized historical censuses, we show that this policy
+                                            substantially hampered technology adoption and capital investment. We interpret this
+                                            as evidence of directed technical adoption: an increase in the labor supply dampens
+                                            the incentive for firms to adopt labor-saving technologies. To validate this mechanism,
+                                            we show that more exposed districts display a sizable increase in overall population
+                                            and employment in manufacturing. We provide evidence that "missing migrants," whose
+                                            migration was inhibited by the Act, drive this result.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="research-item">
+                    <p class="h6"><u class="item-research-teaching"><a class="link_paper" href="dcoluccia.github.io/docs/C_2020.pdf">Durable Goods and Monetary Policy in a Menu-Cost Economy</a></u></p>
+                    <p class="text-muted">2021</p>
+                    <p class="research-par">
+                        <b>Idea.</b> Frequency and dispersion of durable goods price changes are positively correlated.
+                        In an <i>(S,s)</i> model which replicates this fact durable goods increase the effectiveness
+                        of monetary policy.
+                    </p>
+                    <div class="research-buttons">
+                        <button onclick="update_abstract_button('Abstract_C2020')" class="buttonAbstract" data-toggle="collapse" href="#C2020" role="button" aria-expanded="false" aria-controls="C2020" value="Show Abstract" id="Abstract_C2020">
+                            Abstract &#x25BC;
+                        </button>
+                        &nbsp
+                        <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="<code>@article{Coluccia_2021,<br/>&nbsp&nbsp&nbsp&nbsp title&nbsp&nbsp&nbsp=&nbsp{{Durable Goods and Monetary Policy in a Menu-Cost Economy}},<br/>&nbsp&nbsp&nbsp&nbsp author&nbsp&nbsp=&nbsp{Davide M. Coluccia},<br/>&nbsp&nbsp&nbsp&nbsp journal&nbsp=&nbsp{Working Paper},<br/>&nbsp&nbsp&nbsp&nbsp year&nbsp&nbsp&nbsp&nbsp=&nbsp{2021},<br/>}</code>" data-html="true" data-placement="bottom">
+                            BibTeX
+                        </button>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="collapse multi-collapse" id="C2020">
+                                    <div class="card card-body">
+                                        <p class="text-justify">
+                                            This paper studies the distinctive pricing dynamics of durable goods and
+                                            analyzes their implications for the conduct of monetary policy in a menu-cost economy.
+                                            Using price microdata, I document the following new facts: (i) the dispersion of
+                                            price changes in durables is higher than in nondurables; (ii) the frequency of price
+                                            adjustment is countercyclical, however durable prices get relatively rigid in recessions;
+                                            (iii) the dispersion of price changes is countercyclical for durables, and procyclical
+                                            for nondurables. I develop a menu-cost model embedding durable consumption and
+                                            calibrate it to match new and consolidated empirical evidence. I use the model to
+                                            challenge the prevailing view holding that durable goods dampen the real effectiveness
+                                            of monetary policy. I find that even though durable goods prices are relatively
+                                            flexible, the model generates substantial monetary non-neutrality. Moreover,
+                                            this paper puts forward a new channel whereby durable consumption can amplify the
+                                            real effects of monetary policy. This result is driven by heterogeneous demand
+                                            pass-through of aggregate shocks across sectors. Higher durable consumption enhances
+                                            the sensitivity of nondurable output to interest rate shocks thus amplifying monetary
+                                            non-neutrality.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="WorkInProgress">
+                <h1 class="display-5">Selected Work in Progress</h1>
+
+                <div class="research-item">
+                    <p class="h6"><u class="item-research-teaching">Religiosity and Science: An Oxymoron? Evidence from the Spanish Flu</u></p>
+                    <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/enricoberkes/home" target="_blank">Enrico Berkes</a>, <a class="link_muted" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia Dossi</a>, and <a class="link_muted" href="https://marasquicciarini.wixsite.com/home" target="_blank">Mara P. Squicciarini</a>, 2022</p>
+                    <p class="research-par">
+                        <b>Idea.</b> Religion and innovation are viewed as opposing forces. We exploit variation induced
+                        by the Influenza Pandemic to study their joint dynamics in the aftermath of a natural disaster.
+                    </p>
+                    <div class="research-buttons">
+                        <button onclick="update_abstract_button('Abstract_BCDS2022')" class="buttonAbstract" data-toggle="collapse" href="#BCDS2022" role="button" aria-expanded="false" aria-controls="BCDS2022" value="Show Abstract" id="Abstract_BCDS2022">
+                            Abstract &#x25BC;
+                        </button>
+                        &nbsp
+                        <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="<code>@article{Berkes_etal_2022,<br/>&nbsp&nbsp&nbsp&nbsp title&nbsp&nbsp&nbsp=&nbsp{{Religiosity and Science: An Oxymoron? Evidence from the Great Influenza Pandemic}},<br/>&nbsp&nbsp&nbsp&nbsp author&nbsp&nbsp=&nbsp{Enrico Berkes and Davide M. Coluccia and Gaia Dossi and Mara P. Squicciarini},<br/>&nbsp&nbsp&nbsp&nbsp journal&nbsp=&nbsp{Working Paper},<br/>&nbsp&nbsp&nbsp&nbsp year&nbsp&nbsp&nbsp&nbsp=&nbsp{2022},<br/>}</code>" data-html="true" data-placement="bottom">
+                            BibTeX
+                        </button>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="collapse multi-collapse" id="BCDS2022">
+                                    <div class="card card-body">
+                                        <p class="text-justify">
+                                            We study the impact of the Spanish influenza pandemic (1918-20) on religiosity
+                                            and science in the United States. Focusing on the period 1900-1930, we construct a
+                                            novel indicator of revealed religiosity based on the naming patterns of newborn
+                                            babies, and measure scientific progress through the universe of granted patents.
+                                            Exploiting plausibly exogenous variation in exposure to the pandemic, we find that
+                                            relatively more affected counties become both more religious and more innovative.
+                                            Moreover, we document that the relationship between religiosity and science changed
+                                            over time, being negative before 1918, and positive thereafter, a finding at odds
+                                            with the current literature. We use individual-level data to shed light on the
+                                            mechanisms. We show that in counties more affected by the pandemic: i) pre-existing
+                                            differences in religiosity increased, leading to a polarization of religious
+                                            beliefs; ii) individuals in science-related fields, who were less religious before
+                                            the shock, became even less religious than the rest of the population.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="research-item">
+                    <p class="h6"><u class="item-research-teaching">Return Innovation: Evidence from the English Migration to the United States, 1850-1940</u></p>
+                    <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia Dossi</a>, 2022</p>
+                    <p class="research-par">
+                        <b>Idea.</b> New evidence that innovation dynamics of countries sending migrants depend on where emigrants
+                        settle. Return migration is key, but information diffusion across borders is also crucial.
+                    </p>
+                    <div class="research-buttons">
+                        <!--
+                        <button onclick="update_abstract_button('Abstract_CD2022')" class="buttonAbstract" data-toggle="collapse" href="#CD2022" role="button" aria-expanded="false" aria-controls="CD2022" value="Show Abstract" id="Abstract_CD2022">
+                            Abstract &#x25BC;
+                        </button>
+                        &nbsp
+                        -->
+                        <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="<code>@article{Coluccia_Dossi_2022,<br/>&nbsp&nbsp&nbsp&nbsp title&nbsp&nbsp&nbsp=&nbsp{{Return Innovation: Evidence from the English Migration to the United States, 1850-1940}},<br/>&nbsp&nbsp&nbsp&nbsp author&nbsp&nbsp=&nbsp{Davide M. Coluccia and Gaia Dossi},<br/>&nbsp&nbsp&nbsp&nbsp journal&nbsp=&nbsp{Working Paper},<br/>&nbsp&nbsp&nbsp&nbsp year&nbsp&nbsp&nbsp&nbsp=&nbsp{2022},<br/>}</code>" data-html="true" data-placement="bottom">
+                            BibTeX
+                        </button>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="collapse multi-collapse" id="CD2022">
+                                    <div class="card card-body">
+                                        <p class="text-justify">
+                                            This paper studies how out-migration influences the production and direction of
+                                            innovation in the country of origin of migrants. During the Age of Mass Migration
+                                            (1850-1910) approximately 4 million English migrants settled in the United States.
+                                            Using a novel dataset linking US and England individual-level census data, we construct
+                                            bilateral migration flows between English districts and US counties over time. We
+                                            complement these with English patent data we digitized from archival records, and a
+                                            comprehensive dataset of historical US patents. We document a strong positive association
+                                            between the field of innovation activity in US counties where English migrants settle,
+                                            and that in their districts of origin. In ongoing work, we investigate the mechanism(s)
+                                            behind this result. We speculate that migrants facilitate knowledge outflows between
+                                            receiving and sending countries, thus potentially influencing long-run innovation dynamics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="research-item">
+                    <p class="h6"><u class="item-research-teaching">Discrimination and Innovation: Evidence from US Inventors, 1895-1925</u></p>
+                    <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia Dossi</a> and <a class="link_muted" href="https://sites.google.com/view/sebastian-ottinger" target="_blank">Sebastian Ottinger</a>, 2022</p>
+<!--                    <p class="research-par">-->
+<!--                        <b>Idea.</b> Novel evidence of discrimination against (white) inventors with black-sounding names.-->
+<!--                        Lynchings intensify salience of racial content of names: causal evidence of discrimination is provided.-->
+<!--                    </p>-->
+                    <div class="research-buttons">
+                        <!--
+                        <button onclick="update_abstract_button('Abstract_CDO2022')" class="buttonAbstract" data-toggle="collapse" href="#CDO2022" role="button" aria-expanded="false" aria-controls="CDO2022" value="Show Abstract" id="Abstract_CDO2022">
+                            Abstract &#x25BC;
+                        </button>
+                        &nbsp
+                        -->
+                        <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="<code>@article{Coluccia_Dossi_Ottinger_2022,<br/>&nbsp&nbsp&nbsp&nbsp title&nbsp&nbsp&nbsp=&nbsp{{Discrimination and Innovation: Evidence from US Inventors, 1895-1925}},<br/>&nbsp&nbsp&nbsp&nbsp author&nbsp&nbsp=&nbsp{Davide M. Coluccia and Gaia Dossi and Sebastian Ottinger},<br/>&nbsp&nbsp&nbsp&nbsp journal&nbsp=&nbsp{Working Paper},<br/>&nbsp&nbsp&nbsp&nbsp year&nbsp&nbsp&nbsp&nbsp=&nbsp{2022},<br/>}</code>" data-html="true" data-placement="bottom">
+                            BibTeX
+                        </button>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="collapse multi-collapse" id="CDO2022">
+                                    <div class="card card-body">
+                                        <p class="text-justify">
+                                            This paper studies the impact of racial discrimination on innovation.
+                                            We show that white inventors with black names are disproportionately less likely to invent using
+                                            novel data linking US inventors to census records. To address endogeneity in naming patterns,
+                                            we exploit variation in the names of black Americans lynched in 1895-1925. We conjecture that
+                                            lynching pivot the racial content of names, which signals the race of inventors to patent examiners.
+                                            In a difference-in-differences setting, we show that after someone with a given name is lynched,
+                                            the number of patents issued to white inventors with that name sharply and persistently decreases.
+                                            We interpret our findings as evidence of discrimination. Our results suggest that racial biases can
+                                            spill over to non-discriminated groups, thereby amplifying their social cost.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="OldStuff">
+                <h1 class="display-5">Pre-Doctoral Research</h1>
+                <div class="research-item">
+                    <p class="h6"><u class="item-research-teaching"><a class="link_paper" href="dcoluccia.github.io/docs/CDM_2017.pdf">On the effects of firing costs on employment and welfare in a duopoly market with entry</a></u></p>
+                    <p class="text-muted">with <a class="link_muted" href="https://people.unipi.it/simone_dalessandro/" target="_blank">Simone D'Alessandro</a> and <a class="link_muted" href="https://people.unipi.it/nicola_meccheri/" target="_blank">Nicola Meccheri</a> (2017), in Fanti, L. (ed.), <em>Oligopoly: theories and institutions</em>, Pisa (IT): Pisa University Press.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer id="my-footer">
+            <div class="text-muted">&copy; 2022 Davide M. Coluccia. Codes on <a class="link_text" href="#">Github</a>.</div>
+        </footer>
+
+    </div>
+    <div class="col-sm-0 col-lg-2" id="border-right"></div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+
+<script>
+$('body').on('click', function (e) {
+    $('[data-toggle=popover]').each(function () {
+        // hide any open popovers when the anywhere else in the body is clicked
+        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+            $(this).popover('hide');
+        }
+    });
+});
+</script>
+
+<script>
+    function update_abstract_button(x)
+        {
+            var elem = document.getElementById(x);
+            if (elem.value =="Show Abstract") {
+                elem.value  = "Hide Abstract";
+                elem.innerHTML  = "Abstract &#x25B2;";
+            } else{
+            elem.value  = "Show Abstract";
+            elem.innerHTML  = "Abstract &#x25BC;";
             }
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
+        }
+</script>
 
-            $('#dismiss, .overlay').on('click', function () {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
 
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+<script>
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height()+55);
+  });
+});
+</script>
+
 </body>
-
 </html>
