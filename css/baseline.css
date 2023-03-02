@@ -172,6 +172,16 @@ body {
     border-radius: 6px;
 }
 
+.buttonAbstract a{
+    color:black;
+    text-decoration:none;
+}
+
+.buttonAbstract a:hover{
+    color:#F8F9FA;
+    text-decoration:none;
+}
+
 .buttonAbstract:hover{
     color:#F8F9FA;
     border: 1.5px solid #B21311;
