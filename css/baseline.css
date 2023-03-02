@@ -172,12 +172,12 @@ body {
     border-radius: 6px;
 }
 
-.buttonAbstract a{
+.buttonAbstract .link_button{
     color:black;
     text-decoration:none;
 }
 
-.buttonAbstract a:hover{
+.buttonAbstract .link_button:hover{
     color:#F8F9FA;
     text-decoration:none;
 }
