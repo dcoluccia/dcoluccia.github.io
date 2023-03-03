@@ -55,6 +55,9 @@ body {
     #main-text{
         padding-top:10px;
     }
+    .responsive-picture{
+        margin-top:20px;
+    }
 }
 
 @media (min-width: 410px){
@@ -62,12 +65,18 @@ body {
         padding-top:0px;
         margin-top:80px;
     }
+    .responsive-picture{
+        margin-top:20px;
+    }
 }
 
 @media (min-width: 450px){
     #main-text{
         padding-top: 6%;
         margin-top:0px;
+    }
+    .responsive-picture{
+        margin-top:20px;
     }
 }
 

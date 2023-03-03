@@ -11,3 +11,21 @@
         margin-top:-15px;
     }
 }
+
+#home-holder{
+    padding:10px;
+    padding-top:0;
+    margin-top:-20px
+}
+
+@media (min-width: 320px){
+    #home-holder{
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    #home-holder{
+        margin-top: -10px;
+    }
+}
