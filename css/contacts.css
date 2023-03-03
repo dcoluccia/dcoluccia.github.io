@@ -45,3 +45,21 @@
         padding-top:35px;
     }
 }
+
+#contact-container{
+    padding:10px;
+    padding-top:0;
+    margin-top:-20px
+}
+
+@media (min-width: 320px){
+    #contact-container{
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    #contact-container{
+        margin-top: -10px;
+    }
+}

@@ -78,3 +78,20 @@
   /* Red */
 }
 
+#data-container{
+    padding:10px;
+    padding-top:0;
+    margin-top:-20px
+}
+
+@media (min-width: 320px){
+    #data-container{
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    #data-container{
+        margin-top: -10px;
+    }
+}
