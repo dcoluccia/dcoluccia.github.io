@@ -10,7 +10,9 @@
 }
 
 .teaching-item{
-    padding-top:10px;
+    padding:10px;
+    background-color: #E9E9E9;
+    padding-bottom:0.05px;
 }
 
 .h6{
@@ -24,7 +26,8 @@
 
 .teaching-par{
     margin-top:-10px;
-    padding-top:0;
+    padding:0;
+    margin-bottom:5px;
 }
 
 @media (min-width: 320px){
@@ -37,4 +40,8 @@
     #Current_Courses{
         margin-top: -30px;
     }
+}
+
+.separator{
+    margin-top: 20px;
 }
