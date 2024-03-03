@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Davide M. Coluccia / Data</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/baseline.css">
@@ -71,45 +74,48 @@
         <div class="container" id="main-text">
 
             <div class="container" id="data-container">
-                <div class="row">
+
+                <div class="row" id="HistoricalBritishPatents">
                     <div class="col-12">
-                        <h1 class="display-5">Uniting the Kingdom with the States: The UK-US Census Linking Project, 1850-1920</h1>
-                        <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia Dossi</a>, 2023</p>
+                        <h1 class="display-5">Digitized Universe of British Patents during the Second Industrial Revolution, 1853-1900</h1>
+                        <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia Dossi</a></p>
                     </div>
                     <div class="col-sm-12 col-md-6 text-justify">
                         <div class="data-item">
-                            Over the XIX and early XX century, approximately 4 million British immigrants settled in the United States.
-                            This project develops a new dataset which allows to link every migrant recorded in the US census to his
-                            entry in the UK census. To do so, we leverage individual confidential data from historical censuses
-                            recorded in both countries between 1850 and 1920 and state-of-the-art algorithms explicitly developed
-                            to link census data. We can thus reconstruct disaggregated bilateral migration flows between the UK
-                            and the US. The resulting dataset is a general-purpose novel tool available to social scientists which allows to study migration phenomena at an unrivalled level of detail.
+                            We digitize the universe of original patent documents issued in England, Wales, Scotland, and Ireland
+                            between 1853 and 1900. Through state-of-the-art Optical Character Recognition (OCR) techniques,
+                            data analysis using large language models, and manual verification, we construct a machine-readable
+                            covering over 300,000 patent documents. The dataset includes information on the patent title,
+                            technological classification, issue and filing dates, the name of the inventor(s), their profession,
+                            and their address of residence, which we geo-code to precise coordinates. This dataset represents
+                            a novel and unique resource to study the Second Industrial Revolution in the United Kingdom.
                         </div>
-
                         <div class="button-holder">
 <!--                            <button class="buttonAbstract" data-toggle="tooltip" data-placement="bottom" title="A short description of the data will be available soon!"> PDF </button>-->
 <!--                            &nbsp-->
                             <button class="buttonAbstract" data-toggle="tooltip" data-placement="bottom" title="Contact me for inquiries on data access"> Data </button>
                             &nbsp
-                            <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="@article{Coluccia_Dossi_2023_Dataset,<br/>title={{Uniting the Kingdom with the States: The UK-US Census Linking Project, 1850-1920}},<br/>author={Davide M. Coluccia and Gaia Dossi},<br/>journal={Working Paper [dataset]},<br/>year={2023},<br/>}" data-html="true" data-placement="bottom">
+                            <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="<code>@article{Coluccia_Dossi_2023,<br/>&nbsp&nbsp&nbsp&nbsp title&nbsp&nbsp&nbsp=&nbsp{{Return Innovation: The Knowledge Spillovers of the British Migration to the United States, 1870-1940}},<br/>&nbsp&nbsp&nbsp&nbsp author&nbsp&nbsp=&nbsp{Coluccia, Davide M and Dossi, Gaia},<br/>&nbsp&nbsp&nbsp&nbsp journal&nbsp=&nbsp{Working Paper},<br/>&nbsp&nbsp&nbsp&nbsp year&nbsp&nbsp&nbsp&nbsp=&nbsp{2023},<br/>}</code>" data-html="true" data-placement="bottom">
                                 BibTeX
                             </button>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6" align="center">
+                        <div class="separator"></div>
+                        <div class="separator"></div>
                         <div class="data-item">
-                            <iframe class="map-holder" src="images/map_english_emigrants.html" frameborder="0" scrolling="no"></iframe>
-                            <p class="text-muted">English Emigrants to the US, 1850-1920.</p>
+                            <iframe class="map-holder" src="images/map_british_patents.html" frameborder="0" scrolling="no"></iframe>
+                            <p class="text-muted">Number of Patent Grants, 1853-1900</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="separator"></div>
 
-                <div class="row">
+                <div class="row" id="EllisIsland">
                     <div class="col-12">
                         <h1 class="display-5">A Nation of Emigrants: The Italian Mass Migration to the US, 1892-1924. Individual-Level Data from Ellis Island</h1>
-                        <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/lorenzospadavecchia" target="_blank">Lorenzo Spadavecchia</a>, 2023</p>
+                        <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/lorenzospadavecchia" target="_blank">Lorenzo Spadavecchia</a></p>
                     </div>
                     <div class="col-sm-12 col-md-6 text-justify">
                         <div class="data-item">
@@ -127,23 +133,63 @@
 <!--                            &nbsp-->
                             <button class="buttonAbstract" data-toggle="tooltip" data-placement="bottom" title="Contact me for inquiries on data access"> Data </button>
                             &nbsp
-                            <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="@article{Coluccia_Spadavecchia_2023_Dataset,<br/>title={{A Nation of Emigrants: The Italian Mass Migration to the US, 1892-1924. Individual-Level Data from Ellis Island}},<br/>author={Davide M. Coluccia and Lorenzo Spadavecchia},<br/>journal={Working Paper [dataset]},<br/>year={2023},<br/>}" data-html="true" data-placement="bottom">
+                            <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="<code>@article{Coluccia_Spadavecchia_2023,<br/>&nbsp&nbsp&nbsp&nbsp title&nbsp&nbsp&nbsp=&nbsp{{Emigration Restrictions and Economic Development: Evidence from the Italian Mass Migration to the United States}},<br/>&nbsp&nbsp&nbsp&nbsp author&nbsp&nbsp=&nbsp{Coluccia, Davide M and Spadavecchia, Lorenzo},<br/>&nbsp&nbsp&nbsp&nbsp journal&nbsp=&nbsp{Working Paper},<br/>&nbsp&nbsp&nbsp&nbsp year&nbsp&nbsp&nbsp&nbsp=&nbsp{2023},<br/>}</code>" data-html="true" data-placement="bottom">
                                 BibTeX
                             </button>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6" align="center">
+                        <div class="separator"></div>
+                        <div class="separator"></div>
                         <div class="data-item">
                             <iframe class="map-holder" src="images/map_italian_emigrants.html" frameborder="0" scrolling="no"></iframe>
-                            <p class="text-muted">Italian Emigrants to the US, 1892-1924.</p>
+                            <p class="text-muted">Italian Emigrants to the US, 1892-1924</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="separator"></div>
+
+                <div class="row" id="CensusLink">
+                    <div class="col-12">
+                        <h1 class="display-5">Uniting the Kingdom with the States: The UK-US Census Linking Project, 1850-1920</h1>
+                        <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia Dossi</a></p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-justify">
+                        <div class="data-item">
+                            Over the XIX and early XX century, approximately 4 million British immigrants settled in the United States.
+                            This project develops a new dataset which allows to link every migrant recorded in the US census to his
+                            entry in the UK census. To do so, we leverage individual confidential data from historical censuses
+                            recorded in both countries between 1850 and 1920 and state-of-the-art algorithms explicitly developed
+                            to link census data. We can thus reconstruct disaggregated bilateral migration flows between the UK
+                            and the US. The resulting dataset is a general-purpose novel tool available to social scientists which allows to study migration phenomena at an unrivalled level of detail.
+                        </div>
+
+                        <div class="button-holder">
+<!--                            <button class="buttonAbstract" data-toggle="tooltip" data-placement="bottom" title="A short description of the data will be available soon!"> PDF </button>-->
+<!--                            &nbsp-->
+                            <button class="buttonAbstract" data-toggle="tooltip" data-placement="bottom" title="Contact me for inquiries on data access"> Data </button>
+                            &nbsp
+                            <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="<code>@article{Coluccia_Dossi_2023,<br/>&nbsp&nbsp&nbsp&nbsp title&nbsp&nbsp&nbsp=&nbsp{{Return Innovation: The Knowledge Spillovers of the British Migration to the United States, 1870-1940}},<br/>&nbsp&nbsp&nbsp&nbsp author&nbsp&nbsp=&nbsp{Coluccia, Davide M and Dossi, Gaia},<br/>&nbsp&nbsp&nbsp&nbsp journal&nbsp=&nbsp{Working Paper},<br/>&nbsp&nbsp&nbsp&nbsp year&nbsp&nbsp&nbsp&nbsp=&nbsp{2023},<br/>}</code>" data-html="true" data-placement="bottom">
+                                BibTeX
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6" align="center">
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                        <div class="data-item">
+                            <iframe class="map-holder" src="images/map_english_emigrants.html" frameborder="0" scrolling="no"></iframe>
+                            <p class="text-muted">English Emigrants to the US, 1850-1920</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <footer id="my-footer">
-            <div class="text-muted">&copy; 2023 Davide M. Coluccia. Codes on <a class="link_text" href="https://github.com/dcoluccia">Github</a>.</div>
+            <div class="text-muted">&copy; 2024 Davide M. Coluccia. Codes on <a class="link_text" href="https://github.com/dcoluccia">Github</a>.</div>
         </footer>
 
     </div>
@@ -192,3 +238,5 @@ $(function () {
 </body>
 </body>
 </html>
+##
+
