@@ -11,8 +11,16 @@
 
 .teaching-item{
     padding:10px;
-    background-color: #E9E9E9;
+    /*background-color: #E9E9E9;*/
     padding-bottom:0.05px;
+    border: 3px solid transparent;
+    transition: border .2s;
+}
+
+.teaching-item:hover{
+    /* Color border in red*/
+    border: 3px solid #B21311;
+    transition: border .2s;
 }
 
 .h6{

@@ -152,6 +152,7 @@
     .navbar-nav > :hover > a{
         text-decoration: none;
         border-bottom:6px solid #BD6F6F;
+        transition: border-bottom .05s linear;
         margin-bottom:-2px;
         padding-bottom: 5px;
         text-color:#B21311;

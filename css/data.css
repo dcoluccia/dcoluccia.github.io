@@ -1,6 +1,7 @@
 .data-item{
     margin-top:0px;
     margin-bottom:10px;
+    font-size:.9em;
 }
 
 .display-5{
@@ -39,7 +40,7 @@
 
 @media (min-width: 700px){
     .map-holder{
-        width:340px;
+        width:320px;
         margin-top:-30px;
     }
 }
@@ -97,16 +98,40 @@
 }
 
 #CensusLink{
-    background-color: #E9E9E9;
+    /*background-color: #E9E9E9;*/
     padding:10px;
+    border: 3px solid transparent;
+    transition: border .2s;
+}
+
+#CensusLink:hover{
+    /* Color border in red*/
+    border: 3px solid #B21311;
+    transition: border .2s;
 }
 
 #EllisIsland{
-    background-color: #E9E9E9;
+    /*background-color: #E9E9E9;*/
     padding:10px;
+    border: 3px solid transparent;
+    transition: border .2s;
+}
+
+#EllisIsland:hover{
+    /* Color border in red*/
+    border: 3px solid #B21311;
+    transition: border .2s;
 }
 
 #HistoricalBritishPatents{
-    background-color: #E9E9E9;
+    /*background-color: #E9E9E9;*/
     padding:10px;
+    border: 3px solid transparent;
+    transition: border .2s;
+}
+
+#HistoricalBritishPatents:hover{
+    /* Color border in red*/
+    border: 3px solid #B21311;
+    transition: border .2s;
 }
