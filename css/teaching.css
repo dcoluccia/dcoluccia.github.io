@@ -10,7 +10,8 @@
 }
 
 .teaching-item{
-    padding:10px;
+    padding:0px;
+    padding-bottom:20px;
     /*background-color: #E9E9E9;*
     padding-bottom:0.05px;
     border: 3px solid transparent;
