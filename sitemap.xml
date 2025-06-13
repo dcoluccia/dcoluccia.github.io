@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Root page -->
+    <url>
+        <loc>https://dcoluccia.github.io/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Main site sections -->
+    <url>
+        <loc>https://dcoluccia.github.io/cv</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dcoluccia.github.io/research</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dcoluccia.github.io/data</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://dcoluccia.github.io/teaching</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://dcoluccia.github.io/contacts</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- PDF documents -->
+    <url>
+        <loc>https://dcoluccia.github.io/docs/Coluccia_CV.pdf</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://dcoluccia.github.io/docs/Coluccia_JMP.pdf</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://dcoluccia.github.io/docs/CS_2021.pdf</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://dcoluccia.github.io/docs/CDO_2023.pdf</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://dcoluccia.github.io/docs/DealingWithAdversity.pdf</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://dcoluccia.github.io/docs/Coluccia_2025_Settlements.pdf</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://dcoluccia.github.io/docs/C_2020.pdf</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>https://dcoluccia.github.io/docs/CDM_2017.pdf</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+</urlset>
