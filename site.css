@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg: #f5f5f2;
+  --panel: #ffffff;
+  --ink: #1b2b3c;
+  --muted: #5d6a77;
+  --line: #d8dee5;
+  --accent: #8d2b2b;
+  --accent-soft: #b0524a;
+  --shadow: 0 12px 34px rgba(23, 35, 52, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
+body {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.container > .row {
+  justify-content: center;
+}
+
+#border-left,
+#border-right {
+  display: none;
+}
+
+.container > .row > .col-sm-12.col-lg-8 {
+  flex: 0 0 100%;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.col-sm-12.col-lg-8 > .top-shell,
+.col-sm-12.col-lg-8 > #main-text {
+  width: 100%;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#top-shell,
+.top-shell {
+  margin-top: 2rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: none;
+  overflow: visible;
+}
+
+#header-top {
+  display: block;
+  margin-top: 0;
+  padding: 1.85rem 1rem 1.45rem;
+  text-align: center;
+  background: transparent !important;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.display-4 {
+  margin: 0;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  letter-spacing: 0.01em;
+}
+
+#title-affiliation {
+  margin-top: 0.45rem;
+  margin-bottom: 0;
+  padding-bottom: 0.55rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: clamp(0.92rem, 2vw, 1.05rem);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+#header-top .container {
+  padding-bottom: 0.35rem;
+}
+
+.title-separator {
+  display: none;
+}
+
+.no_highlight_link,
+.no_highlight_link:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+#Mobile-header {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.4rem;
+  margin: 0;
+  display: block;
+}
+
+.navbar {
+  margin-top: 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none;
+  padding: 0.42rem 1rem;
+  transition: background-color 280ms ease, border-color 280ms ease, color 200ms ease;
+}
+
+.top-shell .navbar.scrolled {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(920px, calc(100vw - 2rem));
+  z-index: 1200;
+  border: 1px solid #7a2121;
+  border-radius: 0 0 12px 12px;
+  background: var(--accent) !important;
+  transition: background-color 280ms ease, border-color 280ms ease, color 200ms ease;
+}
+
+.top-shell .navbar.scrolled .nav-link {
+  color: #fff6f6 !important;
+}
+
+.top-shell .navbar.scrolled .nav-item:hover .nav-link::after {
+  background: #ffd3d3;
+}
+
+.top-shell .navbar.scrolled .navbar-nav > .active > .nav-link,
+.top-shell .navbar.scrolled .navbar-nav > .active > .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.top-shell .navbar.scrolled .navbar-nav > .active > .nav-link::after {
+  background: #ffffff;
+}
+
+.top-shell .navbar.scrolled .navbar-toggler span {
+  background: #fff6f6;
+}
+
+.top-shell .navbar.scrolled #Mobile-header,
+.top-shell .navbar.scrolled #Mobile-header .no_highlight_link,
+.top-shell .navbar.scrolled #Mobile-header .no_highlight_link:hover {
+  color: #fff6f6 !important;
+}
+
+.top-shell .navbar.scrolled #Mobile-header font {
+  color: #ffffff !important;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.nav-item {
+  position: relative;
+  font-size: 1.16rem;
+}
+
+.nav-link {
+  color: var(--ink) !important;
+  padding: 0.5rem 0.7rem !important;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0.7rem;
+  right: 0.7rem;
+  bottom: 0.2rem;
+  height: 2px;
+  background: transparent;
+  transform: scaleX(0.45);
+  transform-origin: center;
+  transition: background-color 140ms ease, transform 140ms ease;
+}
+
+.nav-item:hover .nav-link::after {
+  background: var(--accent-soft);
+  transform: scaleX(1);
+}
+
+.navbar-nav > .active > .nav-link,
+.navbar-nav > .active > .nav-link:hover {
+  color: var(--accent) !important;
+  font-weight: 600;
+}
+
+.navbar-nav > .active > .nav-link::after {
+  background: var(--accent);
+  transform: scaleX(1);
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--ink);
+  margin: 5px 0;
+}
+
+#main-text {
+  margin-top: 1rem;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  flex: 1 0 auto;
+  font-size: 1.06rem;
+}
+
+#main-text > .container,
+#home-holder,
+#contact-container,
+#data-container,
+#Current_Courses,
+#Past_Courses,
+#WorkingPapers,
+#WorkInProgress,
+#OldStuff,
+#Resting,
+#HistoricalBritishPatents,
+#EllisIsland,
+#CensusLink {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.45rem 1.35rem;
+  box-shadow: none;
+  transition: background-color 180ms ease;
+}
+
+#HistoricalBritishPatents,
+#EllisIsland,
+#CensusLink {
+  margin-bottom: 1rem;
+}
+
+#main-text > #CensusLink {
+  margin-bottom: 0;
+}
+
+/* Data page: each project in its own full-width container */
+#main-text > .data-section {
+  width: 100%;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: none;
+  padding: 1.45rem 1.35rem;
+  transition: background-color 180ms ease;
+}
+
+#main-text > .data-section + .data-section {
+  margin-top: 1.4rem;
+}
+
+#main-text > .data-section .separator {
+  display: none;
+}
+
+#main-text > .data-section .row {
+  align-items: flex-start;
+}
+
+#main-text > .data-section:hover {
+  background-color: #fff3f3;
+}
+
+.research-item,
+.teaching-item {
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  transition: background-color 180ms ease;
+}
+
+.research-item:hover,
+.teaching-item:hover {
+  background-color: #fff3f3;
+}
+
+.display-5 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  margin-bottom: 0.8rem;
+  color: #13263b;
+}
+
+#WorkingPapers > .display-5,
+#WorkInProgress > .display-5,
+#Resting > .display-5,
+#OldStuff > .display-5,
+#Current_Courses > .display-5,
+#Past_Courses > .display-5 {
+  margin-bottom: 1.2rem;
+}
+
+.h5,
+.h6,
+h5,
+h6 {
+  color: #13263b;
+}
+
+#contacts-container .h5 {
+  margin-bottom: 1rem;
+}
+
+#contacts-container a + .h6 {
+  margin-top: 0.9rem;
+}
+
+#contacts-container {
+  align-items: center;
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+.index-holder,
+.data-item,
+.text-justify,
+.teaching-par {
+  color: #25384b;
+}
+
+.separator {
+  margin: 1.15rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.text-muted {
+  color: var(--muted) !important;
+  font-size: 1em;
+}
+
+.link_text,
+.link_paper {
+  color: var(--accent);
+  font-size: 1.06em;
+  text-decoration: none;
+  border-bottom: 0;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+
+.link_muted {
+  color: var(--muted);
+  font-size: 1.06em;
+  text-decoration: none;
+  border-bottom: 0;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+
+.link_text:hover,
+.link_paper:hover,
+.link_muted:hover {
+  color: #6e171a;
+  border-bottom: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.item-research-teaching {
+  text-decoration-color: var(--accent);
+}
+
+
+.responsive-picture {
+  width: min(230px, 65%);
+  height: auto;
+  margin: 0.5rem 0 1rem;
+  border-radius: 6px;
+  border: 0;
+  box-shadow: none;
+}
+
+.buttonAbstract {
+  display: inline-block;
+  margin-top: 0.18rem;
+  margin-bottom: 0.35rem;
+  padding: 0.34rem 0.82rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.98rem;
+}
+
+.buttonAbstract:focus,
+.buttonAbstract:active,
+.buttonAbstract:not(:disabled):not(.disabled):active,
+.show > .buttonAbstract.dropdown-toggle {
+  background: #fff;
+  color: var(--ink);
+  border-color: var(--line);
+  box-shadow: none;
+  outline: none;
+}
+
+.buttonAbstract:hover,
+.buttonAbstract:hover:focus {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.buttonAbstract .link_button {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card {
+  margin-top: 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+.card-body {
+  padding-top: 0.65rem;
+  padding-bottom: 0.3rem;
+}
+
+.map-holder,
+#gmap_canvas {
+  width: 100%;
+  min-height: 320px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+#WorkInProgress,
+#OldStuff,
+#Resting {
+  width: 100%;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+#Past_Courses {
+  margin-top: 1rem;
+}
+
+#my-footer {
+  margin: 0 0 2rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+#home-holder .row {
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  #header-top {
+    display: none;
+  }
+
+  .top-shell {
+    margin-top: 0.55rem;
+  }
+
+  .navbar {
+    margin-top: 0;
+    border-top: 0;
+  }
+
+  .top-shell .navbar.scrolled {
+    left: 15px;
+    right: 15px;
+    width: auto;
+    transform: none;
+    border-radius: 10px;
+  }
+
+  .container > .row > .col-sm-12.col-lg-8 {
+    max-width: 100%;
+  }
+
+  #main-text > .container,
+  #home-holder,
+  #contact-container,
+  #data-container,
+  #Current_Courses,
+  #Past_Courses,
+  #WorkingPapers,
+  #WorkInProgress,
+  #OldStuff,
+  #HistoricalBritishPatents,
+  #EllisIsland,
+  #CensusLink {
+    padding: 1.05rem 0.9rem;
+  }
+
+  .navbar-nav {
+    gap: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #Mobile-header {
+    display: none;
+  }
+}

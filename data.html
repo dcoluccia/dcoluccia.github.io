@@ -14,17 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/baseline.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/data.css">
-    <link rel="icon" href="images/uob_fav.ico">
-
-    <script src="jquery.js"></script>
-    <script>
-    $(function(){
-      $("#includedContent").load("map_english_emigrants.html");
-    });
-    </script>
+    <link rel="icon" href="../images/uob_fav.ico"><link rel="stylesheet" href="site.css">
 </head>
 <body>
 
@@ -33,11 +23,12 @@
     <div class="col-sm-0 col-lg-2" id="border-left"></div>
     <div class="col-sm-12 col-lg-8">
 
+        <div class="top-shell">
         <div class="header bg-light py-1" id="header-top">
             <div class="container">
-                    <h1 class="display-4"><a class="no_highlight_link" href="https://dcoluccia.github.io">Davide M. <font color="#B21311">Coluccia</font></a></h1>
+                    <h1 class="display-4"><a class="no_highlight_link" href="index.html">Davide M. <font color="#B21311">Coluccia</font></a></h1>
                     <h1 class="display-4" id="title-affiliation">
-                        Lecturer (Assistant Professor) of Economics
+                        Lecturer of Economics | University of Bristol
                     </h1>
             </div>
         </div>
@@ -45,7 +36,7 @@
        <div class="title-separator"></div>
 
         <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-            <h1 class="display-4" id="Mobile-header"><a class="no_highlight_link" href="https://dcoluccia.github.io">D. M. <font color="#B21311">Coluccia</font></a></h1>
+            <h1 class="display-4" id="Mobile-header"><a class="no_highlight_link" href="index.html">D. M. <font color="#B21311">Coluccia</font></a></h1>
 
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -55,37 +46,37 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-center">
               <li class="nav-item">
-                <a class="nav-link" title="Home" href="https://dcoluccia.github.io">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" title="Home" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" title="CV" href="docs/Coluccia_CV.pdf">CV</a>
+                <a class="nav-link" title="CV" href="../docs/Coluccia_CV.pdf">CV</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" title="Research" href="https://dcoluccia.github.io/research">Research</a>
+                <a class="nav-link" title="Research" href="research.html">Research</a>
               </li>
                 <li class="nav-item active">
-                <a class="nav-link" title="Data" href="https://dcoluccia.github.io/data">Data</a>
+                <a class="nav-link" title="Data" href="data.html">Data</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" title="Teaching" href="https://dcoluccia.github.io/teaching">Teaching</a>
+                <a class="nav-link" title="Teaching" href="teaching.html">Teaching</a>
               </li>
                 <li class="nav-item">
-                <a class="nav-link" title="Contacts" href="https://dcoluccia.github.io/contacts">Contacts</a>
+                <a class="nav-link" title="Contacts" href="contacts.html">Contacts</a>
               </li>
             </ul>
             </div>
         </nav>
 
+        </div>
+
         <div class="container" id="main-text">
 
-            <div class="container" id="data-container">
-
-                <div class="container" id="HistoricalBritishPatents">
+            <div id="HistoricalBritishPatents" class="data-section">
                     <h1 class="display-5">Digitized Universe of British Patents during the Second Industrial Revolution, 1853-1900</h1>
                     <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia Dossi</a></p>
 
                     <div class="row">
-                        <div class="col-sm-9 col-md-6 text-justify">
+                        <div class="col-12 col-md-6 text-justify">
                             <div class="data-item">
                                 We digitize the universe of original patent documents issued in England, Wales, Scotland, and Ireland
                                 between 1853 and 1900. Through state-of-the-art Optical Character Recognition techniques,
@@ -105,28 +96,26 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-sm-9 col-md-6" align="center">
+                        <div class="col-12 col-md-6" align="center">
                             <div class="separator"></div>
                             <div class="separator"></div>
                             <div class="separator"></div>
                             <div class="separator"></div>
                             <div class="data-item">
-                                <iframe class="map-holder" src="images/map_british_patents.html" frameborder="0" scrolling="no"></iframe>
+                                <iframe class="map-holder" src="maps/map_british_patents.html" frameborder="0" scrolling="no"></iframe>
                                 <p class="text-muted">Number of Patent Grants, 1853-1900</p>
                             </div>
                         </div>
                     </div>
 
-                </div>
+            </div>
 
-                <div class="separator"></div>
-
-                <div class="container" id="EllisIsland">
+            <div id="EllisIsland" class="data-section">
                     <h1 class="display-5">A Nation of Emigrants: The Italian Mass Migration to the US, 1892-1924. Individual-Level Data from Ellis Island</h1>
                     <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/lorenzospadavecchia" target="_blank">Lorenzo Spadavecchia</a></p>
 
                     <div class="row">
-                        <div class="col-sm-9 col-md-6 text-justify">
+                        <div class="col-12 col-md-6 text-justify">
                             <div class="data-item">
                                 Between 1890 and 1924 more than four million Italians emigrated to the United States. During this period,
                                 Italy was the single largest supplier of emigrants in the world.
@@ -147,26 +136,24 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-sm-9 col-md-6" align="center">
+                        <div class="col-12 col-md-6" align="center">
                             <div class="separator"></div>
                             <div class="separator"></div>
                             <div class="data-item">
-                                <iframe class="map-holder" src="images/map_italian_emigrants.html" frameborder="0" scrolling="no"></iframe>
+                                <iframe class="map-holder" src="maps/map_italian_emigrants.html" frameborder="0" scrolling="no"></iframe>
                                 <p class="text-muted">Italian Emigrants to the US, 1892-1924</p>
                             </div>
                         </div>
                     </div>
 
-                </div>
+            </div>
 
-                <div class="separator"></div>
-
-                <div class="container" id="CensusLink">
+            <div id="CensusLink" class="data-section">
                     <h1 class="display-5">Uniting the Kingdom with the States: The UK-US Census Linking Project, 1850-1920</h1>
                     <p class="text-muted">with <a class="link_muted" href="https://sites.google.com/view/gaiadossi" target="_blank">Gaia Dossi</a></p>
 
                     <div class="row">
-                        <div class="col-sm-9 col-md-6 text-justify">
+                        <div class="col-12 col-md-6 text-justify">
                             <div class="data-item">
                                 Over the XIX and early XX century, approximately 4 million British immigrants settled in the United States.
                                 This project develops a new dataset which allows to link every migrant recorded in the US census to his
@@ -186,22 +173,20 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-sm-9 col-md-6" align="center">
+                        <div class="col-12 col-md-6" align="center">
                             <div class="separator"></div>
                             <div class="separator"></div>
                             <div class="data-item">
-                                <iframe class="map-holder" src="images/map_english_emigrants.html" frameborder="0" scrolling="no"></iframe>
+                                <iframe class="map-holder" src="maps/map_english_emigrants.html" frameborder="0" scrolling="no"></iframe>
                                 <p class="text-muted">English Emigrants to the US, 1850-1920</p>
                             </div>
                         </div>
                     </div>
-                </div>
-
             </div>
         </div>
 
         <footer id="my-footer">
-            <div class="text-muted">&copy; 2024 Davide M. Coluccia. Codes on <a class="link_text" href="https://github.com/dcoluccia">Github</a>.</div>
+            <div class="text-muted">&copy; 2026 Davide M. Coluccia. Codes on <a class="link_text" href="https://github.com/dcoluccia">Github</a>.</div>
         </footer>
 
     </div>
@@ -248,7 +233,5 @@ $(function () {
 </script>
 
 </body>
-</body>
 </html>
-##
 
