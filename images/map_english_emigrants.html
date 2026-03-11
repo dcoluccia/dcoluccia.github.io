@@ -179,6 +179,16 @@
                      
     
             geo_json_38cf7996b1621f7f2fe8af8f82912510.addTo(map_38c898f4634d58ae674ae83b3694d7e2);
+
+            function refreshMapEnglishEmigrants() {
+                map_38c898f4634d58ae674ae83b3694d7e2.invalidateSize(true);
+            }
+
+            window.addEventListener("load", function () {
+                setTimeout(refreshMapEnglishEmigrants, 150);
+            });
+
+            window.addEventListener("resize", refreshMapEnglishEmigrants);
         
 </script>
 </html>

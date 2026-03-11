@@ -179,6 +179,16 @@
                      
     
             geo_json_3be5764eabbf0e1e3efd9efa718bad1a.addTo(map_47a6b781664ba5f3112b16d7ad7773a6);
+
+            function refreshMapItalianEmigrants() {
+                map_47a6b781664ba5f3112b16d7ad7773a6.invalidateSize(true);
+            }
+
+            window.addEventListener("load", function () {
+                setTimeout(refreshMapItalianEmigrants, 150);
+            });
+
+            window.addEventListener("resize", refreshMapItalianEmigrants);
         
 </script>
 </html>

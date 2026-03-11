@@ -181,6 +181,16 @@
                      
     
             geo_json_ba56a1542ec36099c5e13f5ffe04fe3d.addTo(map_f62eea9e03cfe69ab4678aaca998d4fd);
+
+            function refreshMapBritishPatents() {
+                map_f62eea9e03cfe69ab4678aaca998d4fd.invalidateSize(true);
+            }
+
+            window.addEventListener("load", function () {
+                setTimeout(refreshMapBritishPatents, 150);
+            });
+
+            window.addEventListener("resize", refreshMapBritishPatents);
         
 </script>
 </html>
