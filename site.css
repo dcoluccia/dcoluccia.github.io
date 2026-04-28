@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --bg: #f5f5f2;
+  --bg: #f9fafb;
   --panel: #ffffff;
-  --ink: #1b2b3c;
-  --muted: #5d6a77;
-  --line: #d8dee5;
-  --accent: #8d2b2b;
-  --accent-soft: #b0524a;
+  --ink: #111827;
+  --muted: #4b5563;
+  --line: #e5e7eb;
+  --accent: #8b1e1e;
+  --accent-soft: #6f1515;
   --shadow: 0 12px 34px rgba(23, 35, 52, 0.08);
 }
 
@@ -22,14 +22,27 @@ body {
 }
 
 html {
-  scrollbar-gutter: stable both-edges;
+  scrollbar-gutter: stable;
 }
 
 body {
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--ink);
   background: var(--bg);
-  line-height: 1.65;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
 }
 
 .container {
@@ -38,6 +51,8 @@ body {
 
 .container > .row {
   justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #border-left,
@@ -47,34 +62,51 @@ body {
 
 .container > .row > .col-sm-12.col-lg-8 {
   flex: 0 0 100%;
-  max-width: 980px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-sm-12.col-lg-8 > #my-footer {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .col-sm-12.col-lg-8 > .top-shell,
 .col-sm-12.col-lg-8 > #main-text {
-  width: 100%;
-  max-width: 920px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.col-sm-12.col-lg-8 > #main-text,
+.col-sm-12.col-lg-8 > #my-footer {
+  display: block;
 }
 
 #top-shell,
 .top-shell {
-  margin-top: 2rem;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 14px;
+  position: relative;
+  margin-top: 0;
+  background: #f3f4f6;
+  border: 0;
+  border-radius: 0;
   box-shadow: none;
   overflow: visible;
 }
 
 #header-top {
+  position: relative;
+  z-index: 1;
   display: block;
   margin-top: 0;
-  padding: 1.85rem 1rem 1.45rem;
+  padding: 0;
   text-align: center;
   background: transparent !important;
   border: 0;
@@ -84,24 +116,29 @@ body {
 
 .display-4 {
   margin: 0;
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: clamp(2rem, 4.5vw, 3rem);
-  letter-spacing: 0.01em;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  letter-spacing: 0;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
 #title-affiliation {
   margin-top: 0.45rem;
   margin-bottom: 0;
   padding-bottom: 0.55rem;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: inherit;
   font-size: clamp(0.92rem, 2vw, 1.05rem);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
   color: var(--muted);
 }
 
 #header-top .container {
-  padding-bottom: 0.35rem;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 1.85rem 1.35rem 0.35rem;
 }
 
 .title-separator {
@@ -115,32 +152,35 @@ body {
 }
 
 #Mobile-header {
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 1.4rem;
+  font-family: inherit;
+  font-size: 1.6rem;
   margin: 0;
   display: block;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
 .navbar {
+  position: relative;
+  z-index: 1;
   margin-top: 0;
   border: 0;
-  border-top: 1px solid var(--line);
   border-radius: 0;
   background: transparent !important;
   box-shadow: none;
-  padding: 0.42rem 1rem;
+  padding: 0.42rem max(1.35rem, calc((100vw - 920px) / 2 + 1.35rem)) 0.54rem;
   transition: background-color 280ms ease, border-color 280ms ease, color 200ms ease;
 }
 
 .top-shell .navbar.scrolled {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(920px, calc(100vw - 2rem));
+  left: 0;
+  right: 0;
+  width: 100vw;
   z-index: 1200;
-  border: 1px solid #7a2121;
-  border-radius: 0 0 12px 12px;
+  border: 0;
+  border-radius: 0;
   background: var(--accent) !important;
   transition: background-color 280ms ease, border-color 280ms ease, color 200ms ease;
 }
@@ -184,13 +224,14 @@ body {
 
 .nav-item {
   position: relative;
-  font-size: 1.16rem;
+  font-size: 1.08rem;
 }
 
 .nav-link {
-  color: var(--ink) !important;
-  padding: 0.5rem 0.7rem !important;
+  color: var(--muted) !important;
+  padding: 0.58rem 0.8rem !important;
   font-weight: 500;
+  letter-spacing: 0.01em;
   position: relative;
 }
 
@@ -215,7 +256,7 @@ body {
 .navbar-nav > .active > .nav-link,
 .navbar-nav > .active > .nav-link:hover {
   color: var(--accent) !important;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .navbar-nav > .active > .nav-link::after {
@@ -241,13 +282,17 @@ body {
 }
 
 #main-text {
-  margin-top: 1rem;
+  margin-top: 0;
+  width: 100vw !important;
+  max-width: none !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
   background: transparent;
   flex: 1 0 auto;
-  font-size: 1.06rem;
+  font-size: 1rem;
 }
 
 #main-text > .container,
@@ -263,10 +308,16 @@ body {
 #HistoricalBritishPatents,
 #EllisIsland,
 #CensusLink {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 1.45rem 1.35rem;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  padding-left: max(1.35rem, calc((100vw - 920px) / 2 + 1.35rem));
+  padding-right: max(1.35rem, calc((100vw - 920px) / 2 + 1.35rem));
   box-shadow: none;
   transition: background-color 180ms ease;
 }
@@ -274,7 +325,7 @@ body {
 #HistoricalBritishPatents,
 #EllisIsland,
 #CensusLink {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 #main-text > #CensusLink {
@@ -284,16 +335,29 @@ body {
 /* Data page: each project in its own full-width container */
 #main-text > .data-section {
   width: 100%;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 14px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   box-shadow: none;
-  padding: 1.45rem 1.35rem;
+  max-width: none;
+  margin: 0;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  padding-left: max(1.35rem, calc((100vw - 920px) / 2 + 1.35rem));
+  padding-right: max(1.35rem, calc((100vw - 920px) / 2 + 1.35rem));
   transition: background-color 180ms ease;
 }
 
+#main-text > :nth-child(odd) {
+  background: #ffffff;
+}
+
+#main-text > :nth-child(even) {
+  background: #f3f4f6;
+}
+
 #main-text > .data-section + .data-section {
-  margin-top: 1.4rem;
+  margin-top: 0;
 }
 
 #main-text > .data-section .separator {
@@ -304,8 +368,20 @@ body {
   align-items: flex-start;
 }
 
-#main-text > .data-section:hover {
-  background-color: #fff3f3;
+#main-text > .data-section:nth-child(odd):hover {
+  background-color: #ffffff;
+}
+
+#main-text > .data-section:nth-child(even):hover {
+  background-color: #f3f4f6;
+}
+
+#Current_Courses:hover {
+  background-color: #ffffff;
+}
+
+#Past_Courses:hover {
+  background-color: #f3f4f6;
 }
 
 .research-item,
@@ -317,14 +393,15 @@ body {
 
 .research-item:hover,
 .teaching-item:hover {
-  background-color: #fff3f3;
+  background-color: transparent;
 }
 
 .display-5 {
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: clamp(1.4rem, 3vw, 1.9rem);
-  margin-bottom: 0.8rem;
-  color: #13263b;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  color: var(--ink);
+  font-weight: 700;
 }
 
 #WorkingPapers > .display-5,
@@ -340,11 +417,27 @@ body {
 .h6,
 h5,
 h6 {
-  color: #13263b;
+  color: var(--accent);
+}
+
+.h5,
+h5 {
+  color: var(--ink);
+}
+
+.h6,
+h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 #contacts-container .h5 {
   margin-bottom: 1rem;
+}
+
+#contacts-container .h6 {
+  color: var(--ink);
 }
 
 #contacts-container a + .h6 {
@@ -357,13 +450,14 @@ h6 {
 
 p {
   margin-bottom: 0.75rem;
+  color: #374151;
 }
 
 .index-holder,
 .data-item,
 .text-justify,
 .teaching-par {
-  color: #25384b;
+  color: #374151;
 }
 
 .separator {
@@ -371,15 +465,32 @@ p {
   border-top: 1px solid var(--line);
 }
 
+#WorkInProgress .research-item p:last-child {
+  margin-bottom: 0;
+}
+
+#WorkInProgress .separator {
+  margin: 0.7rem 0;
+}
+
+#Current_Courses .teaching-item p:last-child,
+#Past_Courses .teaching-item p:last-child {
+  margin-bottom: 0;
+}
+
+#Current_Courses .separator,
+#Past_Courses .separator {
+  margin: 0.7rem 0;
+}
+
 .text-muted {
   color: var(--muted) !important;
-  font-size: 1em;
+  font-size: 0.95rem;
 }
 
 .link_text,
 .link_paper {
   color: var(--accent);
-  font-size: 1.06em;
   text-decoration: none;
   border-bottom: 0;
   transition: color 120ms ease, text-decoration-color 120ms ease;
@@ -387,7 +498,6 @@ p {
 
 .link_muted {
   color: var(--muted);
-  font-size: 1.06em;
   text-decoration: none;
   border-bottom: 0;
   transition: color 120ms ease, text-decoration-color 120ms ease;
@@ -396,14 +506,19 @@ p {
 .link_text:hover,
 .link_paper:hover,
 .link_muted:hover {
-  color: #6e171a;
+  color: var(--accent);
   border-bottom: 0;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
+.button-holder {
+  margin-top: 0.65rem;
+}
+
 .item-research-teaching {
   text-decoration-color: var(--accent);
+  font-weight: 600;
 }
 
 
@@ -422,10 +537,11 @@ p {
   margin-bottom: 0.35rem;
   padding: 0.34rem 0.82rem;
   background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--ink);
-  font-size: 0.98rem;
+  border: 1px solid #111827;
+  border-radius: 6px;
+  color: #111827;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .buttonAbstract:focus,
@@ -434,7 +550,7 @@ p {
 .show > .buttonAbstract.dropdown-toggle {
   background: #fff;
   color: var(--ink);
-  border-color: var(--line);
+  border-color: var(--ink);
   box-shadow: none;
   outline: none;
 }
@@ -451,9 +567,62 @@ p {
   text-decoration: none;
 }
 
+.popover {
+  width: 20rem !important;
+  max-width: 20rem !important;
+  font-family: inherit;
+  border: 1px solid #111827;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.popover-header {
+  padding: 0.7rem 0.95rem 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: #ffffff;
+  border-bottom: 0;
+}
+
+.popover-body {
+  padding: 0.45rem 0.95rem 0.85rem;
+  color: #374151;
+  background: #ffffff;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.popover-body code {
+  display: block;
+  width: 100%;
+  color: #374151;
+  background: #f9fafb;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.7rem 0.85rem;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.bs-popover-bottom > .arrow::before,
+.bs-popover-auto[x-placement^='bottom'] > .arrow::before {
+  border-bottom-color: #111827;
+}
+
+.bs-popover-bottom > .arrow::after,
+.bs-popover-auto[x-placement^='bottom'] > .arrow::after {
+  border-bottom-color: #ffffff;
+}
+
 .card {
   margin-top: 0.4rem;
-  border: 1px solid var(--line);
+  border: 1px solid #111827;
   border-radius: 10px;
   background: var(--panel);
 }
@@ -479,19 +648,39 @@ p {
   max-width: 920px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 #Past_Courses {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 #my-footer {
-  margin: 0 0 2rem;
+  margin: 0;
   margin-top: auto;
-  padding-top: 1rem;
+  padding: 1.6rem max(1.35rem, calc((100vw - 920px) / 2 + 1.35rem));
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: var(--muted);
+  background: #ffffff;
+}
+
+.col-sm-12.col-lg-8:has(#main-text > :last-child:nth-child(odd)) > #my-footer {
+  background: #f3f4f6;
+}
+
+.col-sm-12.col-lg-8:has(#main-text > :last-child:nth-child(even)) > #my-footer {
+  background: #ffffff;
+}
+
+.col-sm-12.col-lg-8:has(#main-text > #contact-container:last-child) > #my-footer {
+  background: #ffffff;
+}
+
+.col-sm-12.col-lg-8:has(#main-text > #home-holder:last-child) > #my-footer {
+  background: #ffffff;
 }
 
 #home-holder .row {
@@ -509,19 +698,23 @@ p {
 
   .navbar {
     margin-top: 0;
-    border-top: 0;
   }
 
   .top-shell .navbar.scrolled {
-    left: 15px;
-    right: 15px;
-    width: auto;
+    left: 0;
+    right: 0;
+    width: 100vw;
     transform: none;
-    border-radius: 10px;
+    border-radius: 0;
   }
 
   .container > .row > .col-sm-12.col-lg-8 {
     max-width: 100%;
+  }
+
+  #my-footer {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
   }
 
   #main-text > .container,
@@ -532,15 +725,57 @@ p {
   #Past_Courses,
   #WorkingPapers,
   #WorkInProgress,
+  #Resting,
   #OldStuff,
   #HistoricalBritishPatents,
   #EllisIsland,
   #CensusLink {
-    padding: 1.05rem 0.9rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
   }
 
   .navbar-nav {
     gap: 0;
+  }
+}
+
+#header-particles {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #header-particles {
+    display: block;
+    position: absolute;
+    inset: 0;
+    pointer-events: auto;
+    z-index: 0;
+  }
+
+  #header-top,
+  .navbar {
+    pointer-events: none;
+  }
+
+  #header-top .container,
+  #header-top .display-4,
+  #title-affiliation,
+  .navbar-collapse,
+  .navbar-nav,
+  .nav-item,
+  #Mobile-header,
+  #Mobile-header .no_highlight_link,
+  #header-top .no_highlight_link,
+  #header-top .no_highlight_link font,
+  #Mobile-header .no_highlight_link font {
+    pointer-events: none;
+  }
+
+  .navbar-toggler,
+  .navbar-nav .nav-link {
+    pointer-events: auto;
   }
 }
 
