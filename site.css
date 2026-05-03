@@ -279,6 +279,21 @@ textarea {
   height: 2px;
   background: var(--ink);
   margin: 5px 0;
+  opacity: 1;
+  transform-origin: center;
+  transition: opacity 0.2s ease, transform 0.25s ease;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 #main-text {
