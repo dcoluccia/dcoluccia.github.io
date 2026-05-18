@@ -317,6 +317,7 @@ textarea {
 #Current_Courses,
 #Past_Courses,
 #WorkingPapers,
+#UnderRevision,
 #WorkInProgress,
 #OldStuff,
 #Resting,
@@ -420,6 +421,7 @@ textarea {
 }
 
 #WorkingPapers > .display-5,
+#UnderRevision > .display-5,
 #WorkInProgress > .display-5,
 #Resting > .display-5,
 #OldStuff > .display-5,
@@ -480,10 +482,12 @@ p {
   border-top: 1px solid var(--line);
 }
 
+#UnderRevision .research-item p:last-child,
 #WorkInProgress .research-item p:last-child {
   margin-bottom: 0;
 }
 
+#UnderRevision .separator,
 #WorkInProgress .separator {
   margin: 0.7rem 0;
 }
@@ -657,6 +661,7 @@ p {
 }
 
 #WorkInProgress,
+#UnderRevision,
 #OldStuff,
 #Resting {
   width: 100%;
@@ -739,6 +744,7 @@ p {
   #Current_Courses,
   #Past_Courses,
   #WorkingPapers,
+  #UnderRevision,
   #WorkInProgress,
   #Resting,
   #OldStuff,
