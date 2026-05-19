@@ -75,6 +75,25 @@
 
         </div>
 
+        <nav class="section-rail" aria-label="Research sections">
+            <a class="section-rail__link" href="#UnderRevision" title="Under Revision" data-section-target="UnderRevision">
+                <span class="section-rail__dot"></span>
+                <span class="section-rail__label">Under Revision</span>
+            </a>
+            <a class="section-rail__link" href="#WorkingPapers" title="Working Papers" data-section-target="WorkingPapers">
+                <span class="section-rail__dot"></span>
+                <span class="section-rail__label">Working Papers</span>
+            </a>
+            <a class="section-rail__link" href="#WorkInProgress" title="Work in Progress" data-section-target="WorkInProgress">
+                <span class="section-rail__dot"></span>
+                <span class="section-rail__label">Work in Progress</span>
+            </a>
+            <a class="section-rail__link" href="#OldStuff" title="Pre-Doctoral Research" data-section-target="OldStuff">
+                <span class="section-rail__dot"></span>
+                <span class="section-rail__label">Pre-Doctoral</span>
+            </a>
+        </nav>
+
         <div class="container" id="main-text">
 
             <div class="container" id="UnderRevision">
@@ -343,52 +362,6 @@
                 </div>
             </div>
 
-            <div class="container" id="Resting">
-                <h1 class="display-5">Resting Projects</h1>
-
-                <div class="research-item">
-                    <p class="h6"><u class="item-research-teaching"><a class="link_paper" href="../docs/C_2020.pdf">Durable Goods and Monetary Policy in a Menu-Cost Economy</a></u></p>
-                    <p class="text-muted"></p>
-
-                    <div class="research-buttons">
-                        <button onclick="update_abstract_button('Abstract_C2020')" class="buttonAbstract" data-toggle="collapse" href="#C2020" role="button" aria-expanded="false" aria-controls="C2020" value="Show Abstract" id="Abstract_C2020">
-                            Abstract &#x25BC;
-                        </button>
-                        &nbsp
-                        <button class="buttonAbstract" data-toggle="popover" title="Preferred Citation" data-content="<code>@article{Coluccia_2021,<br/>&nbsp&nbsp&nbsp&nbsp title&nbsp&nbsp&nbsp=&nbsp{{Durable Goods and Monetary Policy in a Menu-Cost Economy}},<br/>&nbsp&nbsp&nbsp&nbsp author&nbsp&nbsp=&nbsp{Coluccia, Davide M},<br/>&nbsp&nbsp&nbsp&nbsp journal&nbsp=&nbsp{Working Paper},<br/>&nbsp&nbsp&nbsp&nbsp year&nbsp&nbsp&nbsp&nbsp=&nbsp{2021},<br/>}</code>" data-html="true" data-placement="bottom">
-                            BibTeX
-                        </button>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="collapse multi-collapse" id="C2020">
-                                    <div class="card card-body">
-                                        <p class="text-justify">
-                                            This paper studies the distinctive pricing dynamics of durable goods and
-                                            analyzes their implications for the conduct of monetary policy in a menu-cost economy.
-                                            Using price microdata, I document the following new facts: (i) the dispersion of
-                                            price changes in durables is higher than in nondurables; (ii) the frequency of price
-                                            adjustment is countercyclical, however durable prices get relatively rigid in recessions;
-                                            (iii) the dispersion of price changes is countercyclical for durables, and procyclical
-                                            for nondurables. I develop a menu-cost model embedding durable consumption and
-                                            calibrate it to match new and consolidated empirical evidence. I use the model to
-                                            challenge the prevailing view holding that durable goods dampen the real effectiveness
-                                            of monetary policy. I find that even though durable goods prices are relatively
-                                            flexible, the model generates substantial monetary non-neutrality. Moreover,
-                                            this paper puts forward a new channel whereby durable consumption can amplify the
-                                            real effects of monetary policy. This result is driven by heterogeneous demand
-                                            pass-through of aggregate shocks across sectors. Higher durable consumption enhances
-                                            the sensitivity of nondurable output to interest rate shocks thus amplifying monetary
-                                            non-neutrality.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="container" id="OldStuff">
                 <h1 class="display-5">Pre-Doctoral Research</h1>
 
@@ -488,6 +461,7 @@ $(function () {
   });
 });
 </script>
+<script src="section-rail.js"></script>
 
 </body>
 </html>
