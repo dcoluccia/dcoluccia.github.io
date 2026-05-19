@@ -838,7 +838,7 @@ p {
 @media (min-width: 992px) {
   .section-rail {
     position: fixed;
-    top: var(--section-rail-top, 50%);
+    top: 50%;
     left: max(0.75rem, calc(((100vw - 920px) / 2 + 1.35rem - var(--section-rail-width)) / 2));
     z-index: 800;
     display: flex;

@@ -29,22 +29,6 @@
       });
     }
 
-    function updateRailPosition() {
-      var firstSection = sections[0].section.getBoundingClientRect();
-      var railHalfHeight = rail.offsetHeight / 2;
-      var visibleTop = Math.max(firstSection.top, 0);
-      var visibleBottom = Math.min(firstSection.bottom, window.innerHeight);
-      var visibleHeight = Math.max(0, visibleBottom - visibleTop);
-      var targetTop = visibleHeight > 0
-        ? visibleTop + visibleHeight / 2
-        : firstSection.top + firstSection.height / 2;
-      var minTop = railHalfHeight + 16;
-      var maxTop = window.innerHeight - railHalfHeight - 16;
-      var clampedTop = Math.min(Math.max(targetTop, minTop), maxTop);
-
-      rail.style.setProperty('--section-rail-top', clampedTop + 'px');
-    }
-
     function updateActiveSection() {
       var documentHeight = document.documentElement.scrollHeight;
       var scrollBottom = window.scrollY + window.innerHeight;
@@ -88,13 +72,9 @@
       updateActiveSection();
     }
 
-    updateRailPosition();
     updateActiveSection();
     window.addEventListener('scroll', updateActiveSection, { passive: true });
-    window.addEventListener('resize', function () {
-      updateRailPosition();
-      updateActiveSection();
-    });
+    window.addEventListener('resize', updateActiveSection);
     window.addEventListener('wheel', clearClickedItem, { passive: true });
     window.addEventListener('touchmove', clearClickedItem, { passive: true });
     window.addEventListener('keydown', clearClickedItem);
