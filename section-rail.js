@@ -18,6 +18,18 @@
     if (!sections.length) return;
     var clickedItem = null;
 
+    function moveIndicator(activeItem) {
+      var dot = activeItem.link.querySelector('.section-rail__dot');
+      if (!dot) return;
+
+      var railRect = rail.getBoundingClientRect();
+      var dotRect = dot.getBoundingClientRect();
+      var offset = dotRect.top - railRect.top + (dotRect.height / 2) - (dot.offsetHeight / 2);
+
+      rail.style.setProperty('--section-rail-indicator-y', offset + 'px');
+      rail.classList.add('is-ready');
+    }
+
     function setActive(activeItem) {
       sections.forEach(function (item) {
         item.link.classList.toggle('is-active', item === activeItem);
@@ -27,6 +39,8 @@
           item.link.removeAttribute('aria-current');
         }
       });
+
+      moveIndicator(activeItem);
     }
 
     function updateActiveSection() {
