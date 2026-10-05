@@ -152,10 +152,15 @@ main{padding-top:31px;padding-bottom:65px}.site-footer{min-height:105px;grid-tem
 @media(max-width:760px){.back-to-top{bottom:calc(14px + var(--footer-overlap,0px))}}
 .mobile-arrow{display:none}
 @media(max-width:760px){
+.arrow-link{display:inline-flex;align-items:flex-end}
+.arrow-link:not(.text-link){gap:5px}
+.arrow-link .link-label{min-width:0}
+.section-index .section-index-link{align-items:flex-end}
+.section-count{display:inline-flex;align-items:flex-end;gap:5px}
 .link-arrow,.section-arrow{display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;font-size:0!important;line-height:0!important;transition:none!important}
 .mobile-arrow{display:block!important;width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.arrow-link:is(:hover,:focus-visible) .link-arrow{transform:none}
-.section-arrow,.section-index-link:is(:hover,:focus-visible) .section-arrow{transform:rotate(90deg);transition:none}
+.arrow-link .link-arrow,.arrow-link:is(:hover,:focus-visible) .link-arrow{transform:translateY(-3px)}
+.section-arrow,.section-index-link:is(:hover,:focus-visible) .section-arrow{transform:translateY(-1px) rotate(90deg);transition:none}
 .back-to-top span{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;font-size:0!important;line-height:0!important;transition:none}
 .back-to-top span .mobile-arrow{width:14px;height:14px}
 .back-to-top:is(:hover,:focus-visible) span{transform:none}
