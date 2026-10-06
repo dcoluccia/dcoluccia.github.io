@@ -51,7 +51,7 @@ main{min-height:calc(100vh - 211px);padding:47px var(--gutter) 100px;max-width:1
 .home-intro{display:grid;grid-template-columns:40% minmax(0,1fr);gap:9%;padding:9px 0 83px}
 .home-intro .identity{align-self:center}
 .portrait{width:min(100%,300px);margin:0 auto}
-.portrait img{display:block;width:100%;height:auto;filter:grayscale(100%)}
+.portrait img{display:block;width:100%;height:auto}
 .about{padding-top:0}
 .about h2{font-size:var(--type-item);font-weight:400;letter-spacing:-.8px;line-height:1.15;margin-bottom:32px}
 .prose{font-size:var(--type-body);line-height:var(--leading-body);border-top:1px solid var(--line);padding-top:24px}
