@@ -153,12 +153,14 @@ main{padding-top:31px;padding-bottom:65px}.site-footer{min-height:105px;grid-tem
 @media(max-width:760px){
 .mobile-detail-toggle{display:flex;width:100%;align-items:center;justify-content:space-between;min-height:44px;margin-top:12px;padding:8px 0;color:var(--muted);text-align:left}
 .mobile-detail-toggle span:last-child{font-size:21px;line-height:1}
-.mobile-detail-toggle:is(:hover,:focus-visible){color:var(--ink)}
 .js .page-research .detail-body.is-collapsed,.js .page-data .detail-body.is-collapsed{display:none}
 .js .page-research .detail-body .eyebrow{display:none}
 .page-research .detail-body,.page-data .detail-body{margin-top:12px}
 .page-research .paper-links,.page-data .paper-links{margin-top:10px;margin-bottom:10px}
 .page-research .citation summary,.page-data .citation summary{min-height:44px}
+}
+@media(max-width:480px){
+.js .page-research .detail-body.is-collapsed+.paper-links,.js .page-data .detail-body.is-collapsed+.paper-links{margin-top:8px;margin-bottom:11px}
 }
 @media(max-width:760px){.back-to-top{bottom:calc(14px + var(--footer-overlap,0px))}}
 .mobile-arrow{display:none}
