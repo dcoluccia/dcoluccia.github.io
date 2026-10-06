@@ -76,6 +76,7 @@ main{min-height:calc(100vh - 211px);padding:47px var(--gutter) 100px;max-width:1
 .detail-body{margin-top:27px;font-size:var(--type-body);line-height:var(--leading-body)}
 .detail-body:empty{display:none}
 .detail-body .eyebrow{margin-bottom:12px;color:var(--muted)}
+.mobile-detail-toggle{display:none}
 .paper-links{display:flex;flex-wrap:wrap;gap:18px 25px;margin:25px 0}
 .page-research .paper-links .text-link,.page-data .paper-links .text-link{color:var(--muted)}
 .page-research .paper-links .text-link:is(:hover,:focus-visible),.page-data .paper-links .text-link:is(:hover,:focus-visible){color:var(--ink)}
@@ -141,14 +142,24 @@ main{padding-top:31px;padding-bottom:65px}.site-footer{min-height:105px;grid-tem
 .section-count{color:var(--muted);font-size:var(--type-label);letter-spacing:.5px;white-space:nowrap}
 .research-group{scroll-margin-top:24px}
 .research-group .research-item-header{border-top:1px solid var(--line);padding-top:17px;margin:0 0 20px}
-.research-group .research-item-header,.course-group>.eyebrow,.contact-content section>h2,.page-data .detail-panel>.eyebrow{font-size:var(--type-section);line-height:1.3;letter-spacing:.6px;font-weight:400}
-.page-data .detail-panel>.eyebrow{border-top:1px solid var(--line);padding-top:17px;margin-bottom:20px}
+.research-group .research-item-header,.course-group>.eyebrow,.contact-content section>h2,.page-data .detail-panel>p.eyebrow{font-size:var(--type-section);line-height:1.3;letter-spacing:.6px;font-weight:400}
+.page-data .detail-panel>p.eyebrow{border-top:1px solid var(--line);padding-top:17px;margin-bottom:20px}
 .research-group+.research-group{margin-top:60px}
 .research-group .detail-panel+.detail-panel{margin-top:48px}
 .page-research .paper-links,.page-data .paper-links{margin-bottom:10px}
 .page-research .citation,.page-data .citation{border:0;margin-top:0}
 .page-research .citation summary,.page-data .citation summary{min-height:32px}
 @media(max-width:760px){.data-library .detail-panel+.detail-panel{margin-top:36px}.research-library .section-index,.data-library .section-index{margin-top:0}.research-library .section-index-link,.data-library .section-index-link{min-height:55px}.research-group+.research-group{margin-top:33px}.research-group .detail-panel+.detail-panel{margin-top:36px}}
+@media(max-width:760px){
+.mobile-detail-toggle{display:flex;width:100%;align-items:center;justify-content:space-between;min-height:44px;margin-top:12px;padding:8px 0;color:var(--muted);text-align:left}
+.mobile-detail-toggle span:last-child{font-size:21px;line-height:1}
+.mobile-detail-toggle:is(:hover,:focus-visible){color:var(--ink)}
+.js .page-research .detail-body.is-collapsed,.js .page-data .detail-body.is-collapsed{display:none}
+.js .page-research .detail-body .eyebrow{display:none}
+.page-research .detail-body,.page-data .detail-body{margin-top:12px}
+.page-research .paper-links,.page-data .paper-links{margin-top:10px;margin-bottom:10px}
+.page-research .citation summary,.page-data .citation summary{min-height:44px}
+}
 @media(max-width:760px){.back-to-top{bottom:calc(14px + var(--footer-overlap,0px))}}
 .mobile-arrow{display:none}
 @media(max-width:760px){
@@ -166,4 +177,4 @@ main{padding-top:31px;padding-bottom:65px}.site-footer{min-height:105px;grid-tem
 .back-to-top:is(:hover,:focus-visible) span{transform:none}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
-@media print{body{background:#fff}.site-header nav,.menu-toggle,.library-index,.copy-citation,.skip-link{display:none!important}main{padding:20px 0}.library,.split-page{display:block}.library-detail{position:static!important;max-height:none!important;overflow:visible!important}.detail-panel[hidden]{display:block}.detail-panel{break-inside:avoid;margin:30px 0!important}.site-footer{margin:0}.home-intro{gap:30px}.site-header{margin:0}a{color:#000}}
+@media print{body{background:#fff}.site-header nav,.menu-toggle,.library-index,.copy-citation,.skip-link,.mobile-detail-toggle{display:none!important}main{padding:20px 0}.library,.split-page{display:block}.library-detail{position:static!important;max-height:none!important;overflow:visible!important}.detail-panel[hidden],.page-research .detail-body.is-collapsed,.page-data .detail-body.is-collapsed,.page-research .detail-body .eyebrow{display:block!important}.detail-panel{break-inside:avoid;margin:30px 0!important}.site-footer{margin:0}.home-intro{gap:30px}.site-header{margin:0}a{color:#000}}

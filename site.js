@@ -75,6 +75,34 @@ document.querySelectorAll('.copy-citation').forEach(button => {
   });
 });
 
+// Keep research abstracts and dataset descriptions compact on mobile.
+document.querySelectorAll('.page-research .detail-panel, .page-data .detail-panel').forEach(panel => {
+  const body = panel.querySelector('.detail-body');
+  const isResearch = panel.closest('.page-research') !== null;
+  if (!body?.textContent.trim() || (isResearch && !body.querySelector('h4.eyebrow'))) return;
+
+  const label = isResearch ? 'Abstract' : 'Description';
+  body.id = `${panel.id}-${label.toLowerCase()}`;
+  body.classList.add('is-collapsed');
+
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'mobile-detail-toggle eyebrow';
+  button.setAttribute('aria-controls', body.id);
+  button.setAttribute('aria-expanded', 'false');
+  button.setAttribute('aria-label', `Expand ${label.toLowerCase()}`);
+  button.innerHTML = `<span>${label}</span><span aria-hidden="true">+</span>`;
+  body.before(button);
+
+  button.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') !== 'true';
+    button.setAttribute('aria-expanded', String(expanded));
+    button.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} ${label.toLowerCase()}`);
+    body.classList.toggle('is-collapsed', !expanded);
+    button.lastElementChild.textContent = expanded ? '×' : '+';
+  });
+});
+
 const backToTop = document.querySelector('.back-to-top');
 if (backToTop) {
   const footer = document.querySelector('.site-footer');
