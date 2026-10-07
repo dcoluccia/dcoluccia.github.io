@@ -99,7 +99,6 @@ document.querySelectorAll('.page-research .detail-panel, .page-data .detail-pane
     button.setAttribute('aria-expanded', String(expanded));
     button.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} ${label.toLowerCase()}`);
     body.classList.toggle('is-collapsed', !expanded);
-    button.lastElementChild.textContent = expanded ? '×' : '+';
   });
 });
 
