@@ -50,7 +50,7 @@ main{min-height:calc(100vh - 211px);padding:47px var(--gutter) 100px;max-width:1
 .skip-link:focus{top:10px}
 .home-intro{display:grid;grid-template-columns:40% minmax(0,1fr);gap:9%;padding:9px 0 83px}
 .home-intro .identity{align-self:center}
-.portrait{width:min(100%,300px);margin:0 auto}
+.portrait{width:min(100%,275px);margin:0 auto}
 .portrait img{display:block;width:100%;height:auto}
 .about{padding-top:0}
 .about h2{font-size:var(--type-item);font-weight:400;letter-spacing:-.8px;line-height:1.15;margin-bottom:32px}
@@ -121,13 +121,13 @@ main{min-height:calc(100vh - 211px);padding:47px var(--gutter) 100px;max-width:1
 .office address{font-style:normal;font-size:var(--type-section);line-height:1.5;margin-bottom:24px}
 .office iframe{width:100%;height:285px;border:0;display:block;margin-top:30px;filter:grayscale(100%)}
 @media(min-width:1800px){.site-header,.site-footer{max-width:1688px;margin-left:auto;margin-right:auto}}
-@media(max-width:1000px){.site-header nav{gap:19px}.wordmark{font-size:16px;letter-spacing:1px}.home-intro,.library,.split-page{gap:6%}.portrait{width:min(100%,260px)}.home-links{gap:23px}}
+@media(max-width:1000px){.site-header nav{gap:19px}.wordmark{font-size:16px;letter-spacing:1px}.home-intro,.library,.split-page{gap:6%}.portrait{width:min(100%,240px)}.home-links{gap:23px}}
 @media(max-width:760px){
 :root{--type-page:50px;--type-feature:38px;--type-item:26px;--type-section:16px}
 html{scroll-padding-top:84px}.site-header{position:sticky;top:0;z-index:10;background:var(--paper);height:auto;min-height:60px;max-height:100dvh;overflow-y:auto;margin:0;flex-wrap:wrap;gap:0;padding:8px var(--gutter)}.wordmark{font-size:16px}.menu-toggle{display:none;font-size:12px;text-transform:uppercase;gap:10px;align-items:center;padding:8px 0}.js .menu-toggle{display:flex;min-height:44px}.menu-toggle span{font-size:21px;line-height:1}.menu-toggle[aria-expanded="true"] span{transform:rotate(45deg)}
 .header-particles{display:none}.site-header nav{width:100%;gap:12px 25px;flex-wrap:wrap;padding-top:18px;margin-top:17px;border-top:1px solid var(--line)}.js .site-header nav{display:none}.js .site-header nav.is-open{display:flex}
 main{padding-top:31px;padding-bottom:65px}.site-footer{min-height:105px;grid-template-columns:minmax(0,1fr) auto;padding:24px 0;gap:10px}.footer-credit{grid-column:1/-1;grid-row:1;justify-self:center}.footer-copyright{grid-column:1;grid-row:2}.footer-github{grid-column:2;grid-row:2}
-.home-intro{grid-template-columns:1fr;gap:51px;padding-top:0;padding-bottom:55px}.home-intro .identity{align-self:start}.portrait{width:min(100%,220px)}.about h2{margin-bottom:24px}.home-links{gap:26px}
+.home-intro{grid-template-columns:1fr;gap:51px;padding-top:0;padding-bottom:55px}.home-intro .identity{align-self:start}.portrait{width:min(100%,200px)}.about h2{margin-bottom:24px}.home-links{gap:26px}
 .library,.split-page{grid-template-columns:1fr;gap:42px}.page-heading h1{letter-spacing:-2px}.library-index .page-heading{margin-bottom:30px}.page-description{margin-top:14px}
 .library-index,.page-teaching .split-page>.page-heading,.contact-page>.page-heading{position:static;max-height:none;overflow:visible}.js .library-detail{position:static;max-height:none;overflow:visible;padding-right:0}.paper-links{gap:16px 22px}.detail-panel{scroll-margin-top:24px}.research-group{scroll-margin-top:24px}.index-note{margin-top:19px}.data-map iframe{height:390px}.data-map figcaption{flex-wrap:wrap;gap:6px 14px}.section-index{margin-top:30px}.course-group+.course-group{margin-top:33px}.contact-emails{margin-top:30px}.contact-content section>h2{margin-bottom:16px}
 }
