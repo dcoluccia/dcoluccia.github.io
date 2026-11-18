@@ -105,7 +105,6 @@ main{min-height:calc(100vh - 211px);padding:47px var(--gutter) 100px;max-width:1
 .section-index-link:is(:hover,:focus-visible)>span:first-child{text-decoration:underline}
 .course>.eyebrow{border-top:1px solid var(--line);padding-top:17px;margin:0 0 20px}
 .course-group+.course-group{margin-top:60px}
-.course{padding:0 0 25px}
 .course h3{margin-bottom:15px}
 .course h3 a{text-decoration:none}
 .course h3 a:hover{text-decoration:underline}
@@ -144,11 +143,11 @@ main{padding-top:31px;padding-bottom:65px}.site-footer{min-height:105px;grid-tem
 .research-group .research-item-header,.course>.eyebrow,.contact-content section>h2,.page-data .detail-panel>p.eyebrow{font-size:var(--type-section);line-height:1.3;letter-spacing:.6px;font-weight:400}
 .page-data .detail-panel>p.eyebrow{border-top:1px solid var(--line);padding-top:17px;margin-bottom:20px}
 .research-group+.research-group{margin-top:60px}
-.research-group .detail-panel+.detail-panel{margin-top:48px}
+.research-group .detail-panel+.detail-panel,.course+.course{margin-top:48px}
 .page-research .paper-links,.page-data .paper-links{margin-bottom:10px}
 .page-research .citation,.page-data .citation{border:0;margin-top:0}
 .page-research .citation summary,.page-data .citation summary{min-height:32px}
-@media(max-width:760px){.data-library .detail-panel+.detail-panel{margin-top:36px}.research-library .section-index,.data-library .section-index{margin-top:0}.research-library .section-index-link,.data-library .section-index-link{min-height:55px}.research-group+.research-group{margin-top:33px}.research-group .detail-panel+.detail-panel{margin-top:36px}}
+@media(max-width:760px){.data-library .detail-panel+.detail-panel{margin-top:36px}.research-library .section-index,.data-library .section-index{margin-top:0}.research-library .section-index-link,.data-library .section-index-link{min-height:55px}.research-group+.research-group{margin-top:33px}.research-group .detail-panel+.detail-panel,.course+.course{margin-top:36px}}
 @media(max-width:760px){
 .mobile-detail-toggle{display:flex;width:100%;align-items:center;justify-content:space-between;min-height:44px;margin-top:12px;padding:8px 0;color:var(--muted);text-align:left}
 .mobile-detail-toggle span:last-child{font-size:21px;line-height:1;transition:transform .15s}.mobile-detail-toggle[aria-expanded="true"] span:last-child{transform:rotate(45deg)}
